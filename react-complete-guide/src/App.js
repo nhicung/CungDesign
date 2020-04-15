@@ -7,11 +7,14 @@ class App extends Component {
   
   render() {
     return (
+      <div>
+        <img src="golf.jpg" alt="golff" />
       <React.Fragment>
         <Router>
           <NavigationBar />
         </Router>
       </React.Fragment>
+    </div>
     );
   }
 }
