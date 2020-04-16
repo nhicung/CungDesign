@@ -1,8 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
-import Logo from './Images/logo.jpg';
-import ThemePic from './Images/hanoi.jpg';
+import Logo from './logo.jpg';
 
 const Styles = styled.div`
   .navbar { background-color: white; }
@@ -32,7 +31,6 @@ export const NavigationBar = () => (
             width="60"
             height="60"
             alt="logo"/></Nav.Link></Nav.Item> 
-            
             <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> 
             <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="/">Gallery</Nav.Link></Nav.Item> 
@@ -42,10 +40,5 @@ export const NavigationBar = () => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    <img 
-        src={ThemePic}
-        width="100%"
-        height="100%"
-        alt="logo"/>
   </Styles>
 )
