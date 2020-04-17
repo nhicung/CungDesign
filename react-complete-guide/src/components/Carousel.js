@@ -1,14 +1,14 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import styled from 'styled-components';
-import FirstSlide from './Images/hanoi.jpg';
-import SecondSlide from './Images/thucan.jpg';
-import ThirdSlide from './Images/tittle.jpg';
+import FirstSlide from './Images/slide1.jpg';
+import SecondSlide from './Images/slide2.jpg';
+import ThirdSlide from './Images/slide3.jpg';
 
 const Styles = styled.div`
     .carousel, .carousel-item{
     width: 100%;
-    height: 400px;
+    height: 550px;
     }
   `;
 
