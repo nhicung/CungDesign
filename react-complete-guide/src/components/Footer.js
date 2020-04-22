@@ -1,9 +1,19 @@
 import React from 'react';
 import { Container, Nav, NavItem } from 'react-bootstrap';
+import styled from 'styled-components';
 
-function Footer(/*props*/) {
-  return (
-    <footer>
+const Styles = styled.div`
+    .footer{
+    width: 100%;
+    height: 200px;
+    }
+    .copyright {
+      text-align: right;
+    }
+  `;
+export const Footer = () => (
+  <Styles>
+    <div className = "footer">
       <Container>
         <Nav>
           <NavItem
@@ -21,12 +31,10 @@ function Footer(/*props*/) {
           </NavItem>
         </Nav>
 
-        <div className="text-center small copyright">
+        <div className="copyright">
           © RLM 2016
         </div>
       </Container>
-    </footer>
-  );
-}
-
-export default Footer;
+    </div>
+  </Styles>
+  )
