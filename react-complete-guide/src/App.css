@@ -1,10 +1,19 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
+
 .header {
   padding-top: 50px;
   color: #665544;
-  
+  text-align: center;
+}
+
+.footer {
+  background-color: #665544;
+  color: white;
+  border-radius: 0 !important;
+  border-bottom: 0;
+  margin: 20px 0 0;
 }
 
 /* .App-header {
