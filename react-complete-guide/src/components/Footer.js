@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav } from 'react-bootstrap';
 import styled from 'styled-components';
+import {SocialMediaIconsReact} from 'social-media-icons-react';
 // import Table from 'react-bootstrap/Table'
 
 const Styles = styled.div`
@@ -23,22 +24,24 @@ const Styles = styled.div`
     }
 
     .container{
-      padding-top: 20px;
+      // padding-top: 20px;
     }
-
-    tbody tr {
-      padding-top: 10px;
+    .iconList {
+      text-align: right;
     }
   `;
 export const Footer = () => (
   <Styles>
     <div className = "footer">
       <Container>
+        <div className='iconList'>
+          <SocialMediaIconsReact icon="twitter" url="https://twitter.com/your-twitter-handle"/>
+        </div>
         <thead>
           <tr>
             <th><Nav.Link href="/home">Title </Nav.Link></th>
             <th><Nav.Link eventKey="link-1">Link</Nav.Link></th>
-            <th><Nav.Link eventKey="link-2">Link</Nav.Link></th>
+            <th><Nav.Link eventKey="link-2">Link</Nav.Link></th>   
           </tr>
         </thead>
         <tbody>
