@@ -8,24 +8,24 @@ const tileData = [
       featured: true,
     },
     {
-      img: 'Images/bangtan.jpg',
-      title: 'Tasty burger',
+      img: 'Images/65569814_2407505969309330_8251189963018731520_o.jpg',
+      title: 'pic2',
       author: 'director90',
     },
     {
-      img: 'Images/bangtan.jpg',
-      title: 'Camera',
+      img: 'Images/butterflyEff.jpg',
+      title: 'pic3',
       author: 'Danson67',
     },
     {
-      img: 'Images/bangtan.jpg',
+      img: 'Images/71589694_2577197225673536_4451966720243924992_o.jpg',
       title: 'Morning',
       author: 'fancycrave1',
       featured: true,
     },
     {
-      img: 'Images/bangtan.jpg',
-      title: 'Hats',
+      img: 'Images/hanoi.jpg',
+      title: 'hn',
       author: 'Hans',
     },
     {

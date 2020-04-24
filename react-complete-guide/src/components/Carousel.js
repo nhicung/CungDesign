@@ -1,9 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import styled from 'styled-components';
-// import FirstSlide from '../../public/Images/slide1.jpg';
-// import SecondSlide from '../../public/Images/slide2.jpg';
-// import ThirdSlide from '../../public/Images/slide3.jpg';
 
 const Styles = styled.div`
     .carousel, .carousel-item{
@@ -44,8 +41,10 @@ export const CarouselHandler = () => (
                 />
 
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className = 'caption'> 
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -55,8 +54,10 @@ export const CarouselHandler = () => (
                 alt="Third slide"
                 />
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <div className = 'caption'> 
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
