@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Nav, NavItem } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
 import styled from 'styled-components';
+// import Table from 'react-bootstrap/Table'
 
 const Styles = styled.div`
     .footer{
@@ -8,29 +9,50 @@ const Styles = styled.div`
     height: 200px;
     }
     .copyright {
-      text-align: right;
+      text-align: left;
+      padding-top: 40px;
+      font-size: 0.7em;
+    }
+
+    a, .navbar-light .nav-link {
+      font-size: 0.9em;
+      color: white;
+      padding-right: 40px;
+      padding-left: 40px;
+      &:hover { color: #d4d0c6; }
+    }
+
+    .container{
+      padding-top: 20px;
+    }
+
+    tbody tr {
+      padding-top: 10px;
     }
   `;
 export const Footer = () => (
   <Styles>
     <div className = "footer">
       <Container>
-        <Nav>
-          <NavItem
-            eventkey={1}>
-            Privacy policy
-          </NavItem>
-          <NavItem
-            eventkey={2}
-            title="Item">
-            Terms & Conditions
-          </NavItem>
-          <NavItem
-            eventkey={3}>
-            Some other professional link
-          </NavItem>
-        </Nav>
-
+        <thead>
+          <tr>
+            <th><Nav.Link href="/home">Title </Nav.Link></th>
+            <th><Nav.Link eventKey="link-1">Link</Nav.Link></th>
+            <th><Nav.Link eventKey="link-2">Link</Nav.Link></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><Nav.Link href="/home">Title 1</Nav.Link></td>
+            <td><Nav.Link href="/home">Link 1</Nav.Link></td>
+            <td><Nav.Link href="/home">Link 1</Nav.Link></td>
+          </tr>
+          <tr>
+            <td><Nav.Link href="/home">Title 2</Nav.Link></td>
+            <td><Nav.Link href="/home">Link 2</Nav.Link></td>
+            <td><Nav.Link href="/home">Link 2</Nav.Link></td>
+          </tr>
+        </tbody>
         <div className="copyright">
           © RLM 2016
         </div>
