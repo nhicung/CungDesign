@@ -5,6 +5,7 @@ import { NavigationBar } from './components/NavigationBar';
 import { CarouselHandler } from './components/Carousel';
 import { BreakLine } from './components/LineBreak'
 import  {Footer}  from './components/Footer'
+import  Collection from './components/Collection'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 // import ThemePic from './Images/hanoi.jpg';
@@ -29,6 +30,7 @@ class App extends Component {
         <div className="header">
           <h1>Our Collection</h1>
           <BreakLine w="50%" />
+          <Collection/>
         </div>
         <Footer></Footer>
       </div>

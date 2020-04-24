@@ -1,17 +1,26 @@
 import React from 'react';
 import { Container, Nav } from 'react-bootstrap';
 import styled from 'styled-components';
-import {SocialMediaIconsReact} from 'social-media-icons-react';
-// import Table from 'react-bootstrap/Table'
+// import {SocialMediaIconsReact} from 'social-media-icons-react';
+// import { loadCSS } from 'fg-loadcss';
+// import { makeStyles } from '@material-ui/core/styles';
+// import { green } from '@material-ui/core/colors';
+// import Icon from '@material-ui/core/Icon';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import EmailIcon from '@material-ui/icons/Email';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import { IconButton } from '@material-ui/core';
 
 const Styles = styled.div`
     .footer{
     width: 100%;
     height: 200px;
     }
+
     .copyright {
       text-align: left;
-      padding-top: 40px;
+      padding-top: 20px;
       font-size: 0.7em;
     }
 
@@ -28,6 +37,11 @@ const Styles = styled.div`
     }
     .iconList {
       text-align: right;
+      // padding-top: 10px;
+    }
+    .IconButton {
+      color: white;
+      // margin: 1px;
     }
   `;
 export const Footer = () => (
@@ -35,7 +49,11 @@ export const Footer = () => (
     <div className = "footer">
       <Container>
         <div className='iconList'>
-          <SocialMediaIconsReact icon="twitter" url="https://twitter.com/your-twitter-handle"/>
+        <IconButton className='IconButton'><FacebookIcon href="/home"/></IconButton>
+        <IconButton className='IconButton'><InstagramIcon href="/home"/></IconButton>
+        <IconButton className='IconButton'><EmailIcon href="/home"/></IconButton>
+        <IconButton className='IconButton'><TwitterIcon href="/home"/></IconButton>
+        
         </div>
         <thead>
           <tr>
