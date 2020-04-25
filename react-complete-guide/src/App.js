@@ -5,6 +5,7 @@ import { NavigationBar } from './components/NavigationBar';
 import { CarouselHandler } from './components/Carousel';
 import { BreakLine } from './components/LineBreak'
 import  {Footer}  from './components/Footer'
+import  {Feature}  from './components/Feature'
 import  Collection from './components/Collection'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -27,7 +28,8 @@ class App extends Component {
         alt="logo"/> */}
         <BreakLine w="100%" />
         <CarouselHandler></CarouselHandler>
-        <div className="header">
+        <Feature></Feature>
+        <div className="collection">
           <h1>Our Collection</h1>
           <BreakLine w="50%" />
           <Collection/>

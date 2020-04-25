@@ -75,7 +75,7 @@ export const Footer = () => (
           </tr>
         </tbody>
         <div className="copyright">
-          © RLM 2016
+          © Copyright 2020
         </div>
       </Container>
     </div>
