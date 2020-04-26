@@ -5,13 +5,16 @@ import styled from 'styled-components';
 const Styles = styled.div`
     .carousel, .carousel-item{
     width: 100%;
-    height: 550px;
-    align-content: center;
+    // height: 550px;
+    
     }
-    // .carousel-caption {
-    //     width: 60%;
-    // }
-    .caption {
+    .carousel-caption {
+        height: 60%;
+    }
+    .carousel-caption .caption {
+        // align-content: center;
+        padding-top: 10%;
+        height: 100%;
         background-color: rgba(238, 238, 238, 0.7);
         color: #665544;
     }

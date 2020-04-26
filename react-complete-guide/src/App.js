@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
 import { CarouselHandler } from './components/Carousel';
 import { BreakLine } from './components/LineBreak'
@@ -19,6 +19,18 @@ class App extends Component {
         <React.Fragment>
           <Router>
             <NavigationBar />
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/users">
+                <Users />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+            
           </Router>
         </React.Fragment>
         {/* <img 
@@ -38,6 +50,18 @@ class App extends Component {
       </div>
     );
   }
+  
+}
+function Home() {
+  return <h2>Home</h2>;
+}
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
 }
 
 export default App;
