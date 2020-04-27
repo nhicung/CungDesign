@@ -33,11 +33,7 @@ class App extends Component {
             
           </Router>
         </React.Fragment>
-        {/* <img 
-        src={ThemePic}
-        width="100%"
-        height="100%"
-        alt="logo"/> */}
+
         <BreakLine w="100%" />
         <CarouselHandler></CarouselHandler>
         <Feature></Feature>
