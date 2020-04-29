@@ -1,11 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
-import tileData from './title.js';
-import GridTile from './GridTile.js';
+import GridListTile from '@material-ui/core/GridListTile';
+import tileData from './title';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    padding: 150,
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -13,24 +14,26 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    flexWrap: 'nowrap',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: 'translateZ(0)',
-    cellHeight: '50%',
+    width: 1000,
+    height: 550,
   },
+  imgFullWidth : {
+    '&:hover': { 
+        color: '#d4d0c6',
+    }
+  }
 }));
 
-export default function Collection() {
-  
+export default function Gallery() {
   const classes = useStyles();
-  
+
   return (
     <div className={classes.root}>
-      <GridList className={classes.gridList}cols={2.5}>
+      <GridList cellHeight={160} className={classes.gridList} cols={2}>
         {tileData.map((tile) => (
-          <GridTile
-          tile={tile}
-          />
+          <GridListTile key={tile.img} cols={tile.cols || 1}>
+            <img src={tile.img} alt={tile.title} />
+          </GridListTile>
         ))}
       </GridList>
     </div>

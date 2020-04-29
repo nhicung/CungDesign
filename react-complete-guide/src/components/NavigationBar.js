@@ -2,7 +2,6 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 import Logo from './logo.jpg';
-import { Link} from "react-router-dom";
 
 const Styles = styled.div`
   .navbar { background-color: white; }
@@ -42,11 +41,11 @@ export const NavigationBar = () => (
             height="60"
             alt="logo"/></Nav.Item> 
             <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> 
-            <Nav.Item><Link to="/about">About</Link></Nav.Item>
-            <Nav.Item><Nav.Link href="/">Gallery</Nav.Link></Nav.Item> 
-            <Nav.Item><Nav.Link href="/">Workshop</Nav.Link></Nav.Item> 
-            <Nav.Item><Nav.Link href="/">Products</Nav.Link></Nav.Item> 
-            <Nav.Item><Nav.Link href="/">Inspiration</Nav.Link></Nav.Item> 
+            <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/Gallery">Gallery</Nav.Link></Nav.Item> 
+            <Nav.Item><Nav.Link href="/Workshop">Workshop</Nav.Link></Nav.Item> 
+            <Nav.Item><Nav.Link href="/Product">Products</Nav.Link></Nav.Item> 
+            <Nav.Item><Nav.Link href="/Inspiration">Inspiration</Nav.Link></Nav.Item> 
         </Nav>
       </Navbar.Collapse>
     </Navbar>
