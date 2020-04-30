@@ -3,6 +3,8 @@ import Figure from 'react-bootstrap/Figure'
 import FigureImage from 'react-bootstrap/FigureImage'
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+
 // import Button from 'react-bootstrap/Button'
 
 const Styles = styled.div`
@@ -47,7 +49,7 @@ export const Feature = () => (
                 <h1>Who I am?</h1>
                 <hr color = '#665544'></hr>
                 <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
-                <StyleButton> Read More</StyleButton>
+                <Link to="/about"><StyleButton> Read More</StyleButton></Link>
             </div>
             <Figure>
                 <FigureImage
@@ -71,7 +73,7 @@ export const Feature = () => (
                 <h1>Painting of the Week</h1>
                 <hr color = '#665544'></hr>
                 <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
-                <StyleButton> Read More</StyleButton>
+                <Link to="/gallery"><StyleButton> See More</StyleButton></Link>
             </div>
         </Container>
     </Styles>

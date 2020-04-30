@@ -11,6 +11,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { IconButton } from '@material-ui/core';
+import Logo from './logo.jpg';
 
 const Styles = styled.div`
     .footer{
@@ -31,10 +32,7 @@ const Styles = styled.div`
       padding-left: 40px;
       &:hover { color: #d4d0c6; }
     }
-
-    .container{
-      // padding-top: 20px;
-    }
+    
     .iconList {
       text-align: right;
       // padding-top: 10px;
@@ -57,20 +55,27 @@ export const Footer = () => (
         </div>
         <thead>
           <tr>
-            <th><Nav.Link href="/home">Title </Nav.Link></th>
-            <th><Nav.Link eventKey="link-1">Link</Nav.Link></th>
-            <th><Nav.Link eventKey="link-2">Link</Nav.Link></th>   
+            <th><img 
+              src={Logo}
+              width="60"
+              height="60"
+              alt="logo"/></th>
+            <th><Nav.Link href="/home">About </Nav.Link></th>
+            <th><Nav.Link eventKey="link-1">Contact</Nav.Link></th>
+            <th><Nav.Link eventKey="link-2">Terms & Condition</Nav.Link></th>   
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><Nav.Link href="/home">Title 1</Nav.Link></td>
-            <td><Nav.Link href="/home">Link 1</Nav.Link></td>
+            <td></td>
+            <td><Nav.Link href="/home">FAQ</Nav.Link></td>
+            <td><Nav.Link href="/home">Email1@gmail.com </Nav.Link></td>
             <td><Nav.Link href="/home">Link 1</Nav.Link></td>
           </tr>
           <tr>
-            <td><Nav.Link href="/home">Title 2</Nav.Link></td>
-            <td><Nav.Link href="/home">Link 2</Nav.Link></td>
+            <td></td>
+            <td><Nav.Link href="/home">Terms & Condition</Nav.Link></td>
+            <td><Nav.Link href="/home">XXX-XXX-XXXX</Nav.Link></td>
             <td><Nav.Link href="/home">Link 2</Nav.Link></td>
           </tr>
         </tbody>
