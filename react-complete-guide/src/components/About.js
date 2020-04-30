@@ -46,11 +46,17 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     color: '#665544',
     display: 'flex',
-    height: 224,
+    height: 500,
+    
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
+    // width: 150,
   },
+
+  content:{
+    width: '200px',
+  }
 }));
 
 export default function VerticalTabs() {
@@ -79,18 +85,31 @@ export default function VerticalTabs() {
         <Tab label="Item Six" {...a11yProps(5)} />
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
-      <TabPanel value={value} index={0} >
-        <img
+      <div className="content">
+      <TabPanel value={value} index={0}>
+        
+        {/* <img
+                src='Images/bro.jpg'
+                alt="aboutme"
+                height="200px"
+                width="300px"
+            /> */}
+     
+        {/* item1 xghffjh, jhgjhb kjh kljhb kljnlk kjh body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+        unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
+        dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+         */}
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+      {/* <div className="content">
+      <img
                 src='Images/bro.jpg'
                 alt="aboutme"
                 height="200px"
                 width="300px"
             />
-        <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
-        <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
+       </div> */}
+        item2  
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
@@ -107,6 +126,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={6}>
         Item Seven
       </TabPanel>
+      </div>
     </div>
   );
 }

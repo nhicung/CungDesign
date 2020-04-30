@@ -46,7 +46,7 @@ export const Workshop  = () => (
                     Your Name
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="email" placeholder="Email" />
+                    <Form.Control type="email" placeholder="Name" />
                     </Col>
                 </Form.Group>
 
@@ -55,7 +55,7 @@ export const Workshop  = () => (
                     Event
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control type="password" placeholder="Event" />
                     </Col>
                 </Form.Group>
                 <fieldset>

@@ -56,7 +56,7 @@ export const Feature = () => (
                     width={400}
                     height={450}
                     alt="300*450"
-                    src="Images/bro.jpg"
+                    src="Images/bro2.jpg"
                 />
             </Figure>
         </Container>
