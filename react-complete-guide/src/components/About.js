@@ -1,20 +1,112 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core/styles';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
-const GridWrapper = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  margin-top: 1em;
-  margin-left: 6em;
-  margin-right: 6em;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(25px, auto);
-`; 
-export const About = () => (
-  <GridWrapper>
-    <h2>About Page</h2>
-    <p>State at ceiling lay on arms while you're using the keyboard so this human feeds me.</p>
-    <p>I am a kitty cat, sup, feed me, no cares in the world</p>
-    <p>Meow meow, I tell my human purr for no reason but to chase after</p>
-  </GridWrapper>
-)
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `vertical-tab-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
+  };
+}
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: '100px',
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.paper,
+    color: '#665544',
+    display: 'flex',
+    height: 224,
+  },
+  tabs: {
+    borderRight: `1px solid ${theme.palette.divider}`,
+  },
+}));
+
+export default function VerticalTabs() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <div className={classes.root}>
+      <Tabs
+        orientation="vertical"
+        variant="scrollable"
+        value={value}
+        onChange={handleChange}
+        aria-label="Vertical tabs example"
+        className={classes.tabs}
+      >
+        <Tab label="ABout Me" {...a11yProps(0)} />
+        <Tab label="About CungDesign" {...a11yProps(1)} />
+        <Tab label="Item Three" {...a11yProps(2)} />
+        <Tab label="Item Four" {...a11yProps(3)} />
+        <Tab label="Item Five" {...a11yProps(4)} />
+        <Tab label="Item Six" {...a11yProps(5)} />
+        <Tab label="Item Seven" {...a11yProps(6)} />
+      </Tabs>
+      <TabPanel value={value} index={0} >
+        <img
+                src='Images/bro.jpg'
+                alt="aboutme"
+                height="200px"
+                width="300px"
+            />
+        <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
+        <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        Item Two
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        Item Three
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        Item Four
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        Item Five
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        Item Six
+      </TabPanel>
+      <TabPanel value={value} index={6}>
+        Item Seven
+      </TabPanel>
+    </div>
+  );
+}
