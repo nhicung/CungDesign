@@ -16,7 +16,7 @@ import Logo from './logo.jpg';
 const Styles = styled.div`
     .footer{
     width: 100%;
-    height: 200px;
+    height: 225px;
     }
 
     .copyright {
