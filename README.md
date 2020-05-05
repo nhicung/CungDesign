@@ -19,6 +19,9 @@ After clone or download the project, open it in suitable platform (suggested: Vi
 
 ### Installing
 * Install npm 
+```
+[sudo] npm install npm -g
+```
 * Enter these command lines:
 ```
 npm install
