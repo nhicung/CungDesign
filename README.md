@@ -37,7 +37,7 @@ This website is for:
 
 ## Technology
 
-* Built with [React] (https://reactjs.org)
+* Built with [React](https://reactjs.org)
 
 ## License
 
