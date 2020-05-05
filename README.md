@@ -15,15 +15,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Follow instruction here to install react app to your device: https://github.com/facebook/create-react-app
+After clone or download the project, open it in suitable platform (suggested: Visual Studio Code(https://code.visualstudio.com)
 
 ### Installing
-
+Enter these command lines:
 ```
-npx create-react-app my-app
-cd my-app
+npm install
 npm start
 ```
+Website will be shown on your local host.
+
 ## Feature
 
 This website is for:
@@ -32,10 +33,7 @@ This website is for:
 * Use art as a psychological therapy
 
 ## View
-
-### Home Page
-### About page
-### Workshop Page
+![](screenshot/webGif)
 
 ## Technology
 
