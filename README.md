@@ -1,5 +1,5 @@
 # ArtWebsite-React
-A website showcase art collection, using react libraries.
+A website showcases art collection, using react libraries.
 
 ## Table of contents
 * [Getting Started](#getting-started)
