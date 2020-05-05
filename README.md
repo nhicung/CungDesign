@@ -33,7 +33,7 @@ This website is for:
 * Use art as a psychological therapy
 
 ## View
-![](screenshot/webGif)
+![](screenshot/webGif.gif)
 
 ## Technology
 
