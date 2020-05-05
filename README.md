@@ -18,6 +18,7 @@ These instructions will get you a copy of the project up and running on your loc
 After clone or download the project, open it in suitable platform (suggested: Visual Studio Code(https://code.visualstudio.com)
 
 ### Installing
+Install npm 
 Enter these command lines:
 ```
 npm install
