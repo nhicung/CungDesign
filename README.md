@@ -15,36 +15,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Install Unity 2018.3.4f1 to open this project: https://unity3d.com/get-unity/download/archive
+Follow instruction here to install react app to your device: https://github.com/facebook/create-react-app
 
 ### Installing
 
-1. Download Unty from the link
-2. Follow the instruction and install it to your device
-3. Open Unity and run the project
-
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
 ## Feature
 
-To play Squishy Squirrel:
-* Player can control the squirrel to the left and right 
-* Follow instruction to pick the items that can make squirrel gain or lose health 
+This website is for:
+* Showcase paintings
+* Organize Painting workshop
+* Use art as a psychological therapy
 
 ## View
 
-### Title Scene
-### Game Play Scene
-### Setting Scene
+### Home Page
+### About page
+### Workshop Page
 
 ## Technology
 
-* Build with [Unity](https://unity.com)
+* Build with React (https://reactjs.org)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
-
-* Contributors: Thu Nguyen, Musa Khan
-* Instructor: Professor Monica M. McGill
-* Inspiration: Knox College's squirrels
+* Contributor: Hung Cung
+* Inspiration: Cung Design
