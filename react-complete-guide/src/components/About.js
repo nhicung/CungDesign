@@ -77,7 +77,7 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         className={classes.tabs}
       >
-        <Tab label="ABout Me" {...a11yProps(0)} />
+        <Tab label="About Us" {...a11yProps(0)} />
         <Tab label="About CungDesign" {...a11yProps(1)} />
         <Tab label="Inspiration" {...a11yProps(2)} />
         {/* <Tab label="Item Four" {...a11yProps(3)} />

@@ -46,7 +46,7 @@ export const Feature = () => (
     <Styles>
         <Container>
             <div className='description'>
-                <h1>Who I am?</h1>
+                <h1>Who are we?</h1>
                 <hr color = '#665544'></hr>
                 <p>" Thdkshf thhgmbjb skhdla  askjhf sakj fal sakf ls khf ;s akuhf lskd hf dshu shxz fzh lfjh sldkhc shc ds csh djchs jhc dsh h chdshjh dhc jsdhc dhjh" </p>
                 <Link to="/about"><StyleButton> Read More</StyleButton></Link>

@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import Figure from 'react-bootstrap/Figure'
 import FigureImage from 'react-bootstrap/FigureImage'
 import { Container } from 'react-bootstrap';
-import {Link} from 'react-router-dom';
 
 const Style = styled.div`
 .container {
