@@ -4,8 +4,44 @@ import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
+import Figure from 'react-bootstrap/Figure'
+import FigureImage from 'react-bootstrap/FigureImage'
+import { Container } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const Style = styled.div`
+.container {
+    padding-top: 40px;
+    // background-color: rgba(102, 85, 68, 0.7);
+    // border: 1px solid #665544;
+    width: 100%;
+    // min-width = 400px;
+    height: 30%;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.event{
+    width: 50%;
+    margin: 5px;
+    border: 1px solid #665544;
+    display: flex;
+    flex-direction: row;
+}
+.figure {
+    padding: 5%;
+}
+.description {
+    width: 50%;
+    color: #665544;
+    padding: 10px;
+    align-content: center;
+    font-style: italic;
+    font-family: courier;
+    font-size: 15px;
+}
+
 .intro{
     padding-top: 100px;
     color: #665544
@@ -13,7 +49,7 @@ const Style = styled.div`
 
 .signup {
     color: #665544;
-    padding-top: 70px;
+    padding-bottom: 70px;
     padding-left: 30%;
     text-align: left;
     
@@ -34,6 +70,49 @@ const StyleButton = styled.button`
 
 export const Workshop  = () => (
     <Style>
+        <Container>
+            
+            <div className='event'>
+                <Figure>
+                    <FigureImage
+                        width={200}
+                        height={250}
+                        alt="300*450"
+                        src="Images/bangtan.jpg"
+                    />
+                </Figure>
+                <div className='description'>
+                    <h5>Event 1</h5>
+                    <hr color = '#665544'></hr>
+                    <p>Time: </p>
+                    <p>Place: </p>
+                    <p>Description: </p>
+                    {/* <Link to="/about"><StyleButton> Read More</StyleButton></Link> */}
+                </div>
+                
+            </div>
+        {/* </Container>
+        <Container> */}
+            <div className='event'>
+                <Figure>
+                    <FigureImage
+                        width={250}
+                        height={200}
+                        alt="450*300"
+                        src="Images/thucan.jpg"
+                    />
+                </Figure>
+                <div className='description'>
+                    <h5>Event 2</h5>
+                    <hr color = '#665544'></hr>
+                    <p>Time: </p>
+                    <p>Place: </p>
+                    <p>Description: </p>
+                    {/* <Link to="/gallery"><StyleButton> See More</StyleButton></Link> */}
+                </div>
+            </div>
+        </Container>
+
         <div className="intro">
         <h1>Let's get painting!</h1>
         <p>Sign up for our workshop</p>
@@ -55,7 +134,7 @@ export const Workshop  = () => (
                     Event
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="password" placeholder="Event" />
+                    <Form.Control type="email" placeholder="Event" />
                     </Col>
                 </Form.Group>
                 <fieldset>

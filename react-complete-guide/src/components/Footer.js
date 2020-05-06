@@ -61,26 +61,29 @@ export const Footer = () => (
               height="60"
               alt="logo"/></th>
             <th><Nav.Link href="/home">About </Nav.Link></th>
-            <th><Nav.Link eventKey="link-1">Contact</Nav.Link></th>
-            <th><Nav.Link eventKey="link-2">Terms & Condition</Nav.Link></th>   
+            <th><Nav.Link eventKey="link-2">Terms & Condition</Nav.Link></th>
+            <th><Nav.Link eventKey="link-2">Privacy Policy</Nav.Link></th>  
+            <th><Nav.Link eventKey="link-1">Contact</Nav.Link></th> 
           </tr>
         </thead>
         <tbody>
           <tr>
             <td></td>
             <td><Nav.Link href="/home">FAQ</Nav.Link></td>
+            <td></td>
+            <td></td>
             <td><Nav.Link href="/home">Email1@gmail.com </Nav.Link></td>
-            <td><Nav.Link href="/home">Link 1</Nav.Link></td>
           </tr>
           <tr>
             <td></td>
-            <td><Nav.Link href="/home">Terms & Condition</Nav.Link></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td><Nav.Link href="/home">XXX-XXX-XXXX</Nav.Link></td>
-            <td><Nav.Link href="/home">Link 2</Nav.Link></td>
           </tr>
         </tbody>
         <div className="copyright">
-          © Copyright 2020
+          © Copyright 2020 CungDesign
         </div>
       </Container>
     </div>
