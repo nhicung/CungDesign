@@ -9,8 +9,12 @@ import FigureImage from 'react-bootstrap/FigureImage'
 import { Container } from 'react-bootstrap';
 
 const Style = styled.div`
+.title{
+    padding-top: 100px;
+    color: #665544;
+}
 .container {
-    padding-top: 40px;
+    padding-top: 20px;
     // background-color: rgba(102, 85, 68, 0.7);
     // border: 1px solid #665544;
     width: 100%;
@@ -36,8 +40,8 @@ const Style = styled.div`
     color: #665544;
     padding: 10px;
     align-content: center;
-    font-style: italic;
-    font-family: courier;
+    // font-style: italic;
+    // font-family: courier;
     font-size: 15px;
 }
 
@@ -69,8 +73,9 @@ const StyleButton = styled.button`
 
 export const Workshop  = () => (
     <Style>
+        <div className='title'>
+        <h1>Event this Week!</h1></div>
         <Container>
-            
             <div className='event'>
                 <Figure>
                     <FigureImage

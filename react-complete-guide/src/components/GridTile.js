@@ -61,6 +61,11 @@ const useStyles = makeStyles((theme) => ({
       // boxShadow: theme.shadows[5],
       padding: theme.spacing(4, 4, 4),
     },
+
+    frame: {
+      height:'50%',
+      width: '50%',
+    },
   }));
 
 export default function GridTile(props) {
@@ -143,10 +148,14 @@ export default function GridTile(props) {
             >
                 <Fade in={open}>
                 <div className={classes.paper}>
+                  <div className ={classes.frame}>
                     < img src={props.tile.img}
                     alt={props.tile.title} 
+                    height='100%'
+                    width= '100%'
                     id="transition-modal-title"/>
                     <p>jdkshv</p>
+                    </div>
                 </div>
                 </Fade>
         </Modal>

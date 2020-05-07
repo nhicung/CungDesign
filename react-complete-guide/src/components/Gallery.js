@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
+
 import tileData from './title';
 import GridTile from './GridTile.js';
 
@@ -26,7 +27,7 @@ export default function Gallery() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={250} className={classes.gridList} cols={2}>
+      <GridList cellHeight={25} className={classes.gridList} cols={2}>
         {tileData.map((tile) => (
           <GridTile
           tile={tile}
