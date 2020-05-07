@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
 import tileData from './title';
+import GridTile from './GridTile.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,11 +17,8 @@ const useStyles = makeStyles((theme) => ({
     width: 1000,
     height: 550,
   },
-  imgFullWidth : {
-    '&:hover': { 
-        color: '#d4d0c6',
-    }
-  }
+  
+  
 }));
 
 export default function Gallery() {
@@ -29,11 +26,11 @@ export default function Gallery() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={160} className={classes.gridList} cols={2}>
+      <GridList cellHeight={250} className={classes.gridList} cols={2}>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
-            <img src={tile.img} alt={tile.title} />
-          </GridListTile>
+          <GridTile
+          tile={tile}
+          />
         ))}
       </GridList>
     </div>
