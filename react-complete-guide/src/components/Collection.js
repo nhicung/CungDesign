@@ -29,7 +29,6 @@ export default function Collection() {
       <GridList className={classes.gridList}cols={2.5}>
         {tileData.map((tile) => (
           <GridTile
-          key={tile.name}
           tile={tile}
           />
         ))}
