@@ -57,15 +57,24 @@ const useStyles = makeStyles((theme) => ({
       height: '70%',
       width: '70%',
       verticalAlign: 'middle',
+      display: 'flex',
+      flexDirection: 'row',
       // border: '2px solid #000',
       // boxShadow: theme.shadows[5],
       padding: theme.spacing(4, 4, 4),
     },
 
     frame: {
-      height:'50%',
-      width: '50%',
+      height:'80%',
+      width: '80%',
     },
+
+    description: {
+      padding: '20px',
+      width: '50%',
+      color: '#665544',
+  },
+
   }));
 
 export default function GridTile(props) {
@@ -154,8 +163,14 @@ export default function GridTile(props) {
                     height='100%'
                     width= '100%'
                     id="transition-modal-title"/>
-                    <p>jdkshv</p>
-                    </div>
+                  </div>
+                  <div className={classes.description}>
+                    <h5>Name:</h5>
+                    <p>Type of Paint: </p>
+                    <p>Type of Paper: </p>
+                    <p>Inspired by: </p>
+                    {/* <Link to="/about"><StyleButton> Read More</StyleButton></Link> */}
+                  </div>
                 </div>
                 </Fade>
         </Modal>
