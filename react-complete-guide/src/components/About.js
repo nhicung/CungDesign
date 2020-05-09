@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Tabs from '@material-ui/core/Tabs';
@@ -8,8 +7,6 @@ import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
 
-
-const drawerWidth = 240;
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -48,26 +45,33 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   tabs: {
+    paddingTop: 100,
     borderRight: `1px solid ${theme.palette.divider}`,
-  },
-  appBar: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-  },
-  drawer: {
-    width: drawerWidth,
     flexShrink: 0,
+    width: 250,
   },
-  drawerPaper: {
-    width: drawerWidth,
-  },
+  // appBar: {
+  //   // width: `calc(100% - ${drawerWidth}px)`,
+  //   marginLeft: drawerWidth,
+  // },
+  // drawer: {
+  //   width: drawerWidth,
+  //   flexShrink: 0,
+  // },
+  // drawerPaper: {
+  //   width: drawerWidth,
+  // },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
+  
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
   },
+  info:{
+   
+  }
 }));
 
 export default function PermanentDrawerLeft() {
@@ -88,14 +92,14 @@ export default function PermanentDrawerLeft() {
           </Typography>
         </Toolbar>
       </AppBar> */}
-      <Drawer
+      {/* <Drawer
         className={classes.drawer}
         variant="permanent"
         classes={{
           paper: classes.drawerPaper,
         }}
         anchor="left"
-      >
+      > */}
         <div className={classes.toolbar} />
         <Tabs
           orientation="vertical"
@@ -109,36 +113,28 @@ export default function PermanentDrawerLeft() {
         <Tab label="About CungDesign" {...a11yProps(1)} />
         <Tab label="Inspiration" {...a11yProps(2)} />
       </Tabs>
-      </Drawer>
+      {/* </Drawer> */}
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <TabPanel value={value} index={0}>
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-          donec massa sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+          <div className={classes.info}>
+            <h2>About Us</h2>
+            <img
+                width={600}
+                height={250}
+                alt="300*450"
+                src="Images/bangtan.jpg"
+            />
+            
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
+              facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
+              gravida rutrum quisque non tellus. </p> 
+            
+          </div>
         </TabPanel>
         <TabPanel value={value} index={1}>
-        <Typography paragraph>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
           facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
@@ -149,7 +145,7 @@ export default function PermanentDrawerLeft() {
           imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
           arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
           donec massa sapien faucibus et molestie ac.
-        </Typography>
+        </p>
         </TabPanel>
         <TabPanel value={value} index={2}>
         <Typography paragraph>

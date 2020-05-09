@@ -17,6 +17,7 @@ const Styles = styled.div`
     .footer{
     width: 100%;
     height: 225px;
+    flex-shrink: 0;
     }
 
     .copyright {
