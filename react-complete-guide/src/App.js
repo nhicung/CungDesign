@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
-import  {Footer}  from './components/Footer';
-import  About from './components/About';
-import  {Home}  from './components/Home';
-import  Gallery from './components/Gallery';
-import  {Product} from './components/Product';
-import  {Workshop} from './components/Workshop';
-import  Blog from './components/Blog';
+import  {Footer}  from './components/Footer'
+import  About from './components/About'
+import  {Home}  from './components/Home'
+import  Gallery from './components/Gallery'
+import  {Product} from './components/Product'
+import  {Workshop} from './components/Workshop'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 // import ThemePic from './Images/hanoi.jpg';
@@ -35,7 +34,6 @@ class App extends Component {
               <Route path="/Product" component={Product}/>
               <Route path="/Gallery"component={Gallery}/>
               <Route path="/Workshop"component={Workshop}/>
-              <Route path="/Blog"component={Blog}/>
             </Switch>
             </div>
           </Router>
