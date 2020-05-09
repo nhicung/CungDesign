@@ -5,7 +5,10 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Drawer from '@material-ui/core/Drawer';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
+const drawerWidth = 240;
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -41,7 +44,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: '100px',
+    // marginTop: '100px',
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
     color: '#665544',
@@ -51,12 +54,34 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
-    // width: 150,
+    paddingTop: 100,
+    width: 150,
   },
 
-  content:{
+  // content:{
+  //   width: '200px',
+  // },
+
+  // appBar: {
+  //   width: `calc(100% - ${drawerWidth}px)`,
+  //   marginLeft: drawerWidth,
+  // },
+  // drawer: {
+  //   width: drawerWidth,
+  //   flexShrink: 0,
+  //   width: 250,
+  // },
+  // drawerPaper: {
+  //   width: drawerWidth,
+  // },
+  // necessary for content to be below app bar
+  toolbar: theme.mixins.toolbar,
+  content: {
+    flexGrow: 1,
     width: '200px',
-  }
+    backgroundColor: theme.palette.background.default,
+    padding: theme.spacing(3),
+  },
 }));
 
 export default function VerticalTabs() {
@@ -69,14 +94,31 @@ export default function VerticalTabs() {
 
   return (
     <div className={classes.root}>
-      <Tabs
-        orientation="vertical"
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Vertical tabs example"
-        className={classes.tabs}
-      >
+        <CssBaseline />
+      {/* <AppBar position="fixed" className={classes.appBar}>
+        <Toolbar>
+          <Typography variant="h6" noWrap>
+            Permanent drawer
+          </Typography>
+        </Toolbar>
+      </AppBar> */}
+      {/* <Drawer
+        className={classes.drawer}
+        variant="permanent"
+        classes={{
+          paper: classes.drawerPaper,
+        }}
+        anchor="left"
+      > */}
+        <div className={classes.toolbar} />
+        <Tabs
+          orientation="vertical"
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          className={classes.tabs}>
+
         <Tab label="About Us" {...a11yProps(0)} />
         <Tab label="About CungDesign" {...a11yProps(1)} />
         <Tab label="Inspiration" {...a11yProps(2)} />
@@ -85,48 +127,67 @@ export default function VerticalTabs() {
         <Tab label="Item Six" {...a11yProps(5)} />
         <Tab label="Item Seven" {...a11yProps(6)} /> */}
       </Tabs>
-      <div className="content">
-      <TabPanel value={value} index={0}>
-        
-        {/* <img
-                src='Images/bro.jpg'
-                alt="aboutme"
-                height="200px"
-                width="300px"
-            /> */}
-     
-        {/* item1 xghffjh, jhgjhb kjh kljhb kljnlk kjh body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-        unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-        dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-         */}
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-      {/* <div className="content">
-      <img
-                src='Images/bro.jpg'
-                alt="aboutme"
-                height="200px"
-                width="300px"
+      {/* </Drawer> */}
+      <main className={classes.content}>
+        <div className={classes.toolbar} />
+        <TabPanel value={value} index={0}>
+        <div className={classes.info}>
+            <h2>About Us</h2>
+            <img
+                width={600}
+                height={250}
+                alt="300*450"
+                src="Images/bangtan.jpg"
             />
-       </div> */}
-        item2  
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
-      </TabPanel>
-      </div>
-    </div>
+            
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
+              facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
+              gravida rutrum quisque non tellus. </p> 
+            
+          </div>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+        <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
+          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
+          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
+          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
+          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
+          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
+          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
+          donec massa sapien faucibus et molestie ac.
+        </Typography>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+        <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
+          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
+          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
+          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
+          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
+          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
+          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
+          donec massa sapien faucibus et molestie ac.
+        </Typography>
+        <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
+          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
+          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
+          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
+          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
+          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
+          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
+          donec massa sapien faucibus et molestie ac.
+        </Typography>
+        </TabPanel>
+      </main>
+     </div> 
   );
 }
