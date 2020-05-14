@@ -14,6 +14,7 @@ const Styles = styled.div`
     .carousel-caption .caption {
         // align-content: center;
         padding-top: 10%;
+        padding-bottom: 10px;
         height: 100%;
         background-color: rgba(238, 238, 238, 0.7);
         color: #665544;
