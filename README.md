@@ -19,7 +19,7 @@ After having cloned or downloaded the project, open it in suitable platform (sug
 
 ### Installing
 
-Install [Nodejs](https://nodejs.org/en/)
+* Install [Nodejs](https://nodejs.org/en/)
 
 * Install npm 
 ```
