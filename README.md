@@ -22,7 +22,7 @@ After having cloned or downloaded the project, open it in suitable platform (sug
 You will also see any lint errors in the console.
 * Install npm 
 ```
-[sudo] npm install npm -g
+sudo npm install npm -g
 ```
 * Enter these command lines:
 ```
