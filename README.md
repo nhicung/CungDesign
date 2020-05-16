@@ -19,7 +19,8 @@ After having cloned or downloaded the project, open it in suitable platform (sug
 
 ### Installing
 
-You will also see any lint errors in the console.
+Install [Nodejs] (https://nodejs.org/en/)
+
 * Install npm 
 ```
 sudo npm install npm -g
