@@ -18,6 +18,8 @@ These instructions will get you a copy of the project up and running on your loc
 After having cloned or downloaded the project, open it in suitable platform (suggested: [Visual Studio Code](https://code.visualstudio.com))
 
 ### Installing
+
+You will also see any lint errors in the console.
 * Install npm 
 ```
 [sudo] npm install npm -g
@@ -27,6 +29,10 @@ After having cloned or downloaded the project, open it in suitable platform (sug
 npm install
 npm start
 ```
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
 Website will be shown on your local host.
 
 ## Feature
