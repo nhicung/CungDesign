@@ -41,7 +41,7 @@ export default function SimpleContainer(props) {
 					height={250} />
 
 				<div className={classes.description}>
-					<h3>About Us</h3>
+					<h3>Who are we?</h3>
 					<hr color='#665544'></hr>
 					<p>dshf skjhf kdjhf kjfh sdkhf kfjdhs lhf kdjhf jkhjf hf lkaj;lkjc hskla shkaj;.jc kv ksdcn a ckjv djvh kdjslkj kfdjhvk f</p>
 					<Button size="small" variant="outlined" color='#665544' onClick={() => {

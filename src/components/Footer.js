@@ -41,8 +41,8 @@ export const Footer = () => (
     <div className = "footer">
       <Container>
         <div className='iconList'>
-        <IconButton className='IconButton' href="https://facebook.com/cungarttherapy"><FacebookIcon/></IconButton>
-        <IconButton className='IconButton' href="https://instagram.com/cungdesign"><InstagramIcon /></IconButton>
+        <IconButton className='IconButton' href="https://facebook.com/cungarttherapy" target ="_blank"><FacebookIcon/></IconButton>
+        <IconButton className='IconButton' href="https://instagram.com/cungdesign" target ="_blank"><InstagramIcon /></IconButton>
         <IconButton className='IconButton' href="/home"><EmailIcon href="/home"/></IconButton>
         <IconButton className='IconButton'><TwitterIcon href="/home"/></IconButton>
         
