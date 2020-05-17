@@ -6,19 +6,19 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import  About from './About'
-import  {Home}  from './Home'
-import  Gallery from './Gallery'
-import  {Product} from './Product'
-import  {Workshop} from './Workshop'
+import About from './About'
+import { Home } from './Home'
+import Gallery from './Gallery'
+import { Product } from './Product'
+import { Workshop } from './Workshop'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-// import blue from '@material-ui/core/colors/blue';
+//import Logo from '../../public/images/logo.jpg';
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:'#665544',
+      main: '#665544',
     }
   },
 });
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ScrollableTabsButtonAuto() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -74,43 +74,48 @@ export default function ScrollableTabsButtonAuto() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
-      <ThemeProvider theme={theme}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          centered
-          aria-label="scrollable auto tabs example"
-        >
-          <Tab label="Home" {...a11yProps(0)} />
-          <Tab label="Gallery" {...a11yProps(1)} />
-          <Tab label="Workshop" {...a11yProps(2)} />
-          <Tab label="About" {...a11yProps(3)} />
-          <Tab label="Products" {...a11yProps(4)} />
-          <Tab label="Blog" {...a11yProps(5)} />
-        </Tabs>
+      <AppBar position="sticky" color="default">
+        <ThemeProvider theme={theme}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            centered
+            aria-label="scrollable auto tabs example"
+          >
+            <img
+              src='images/logo.jpg'
+              width="60"
+              height="60"
+              alt="logo" />
+            <Tab label="Home" {...a11yProps(1)} />
+            <Tab label="Gallery" {...a11yProps(2)} />
+            <Tab label="Workshop" {...a11yProps(3)} />
+            <Tab label="About" {...a11yProps(4)} />
+            <Tab label="Products" {...a11yProps(5)} />
+            <Tab label="Blog" {...a11yProps(6)} />
+          </Tabs>
         </ThemeProvider>
       </AppBar>
-      <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={1}>
         <Home
           switchPage={setValue}
         ></Home>
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Gallery></Gallery>
-      </TabPanel>
       <TabPanel value={value} index={2}>
-        <Workshop></Workshop>
+        <Gallery/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <About></About>
+        <Workshop/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Product></Product>
+        <About/>
       </TabPanel>
       <TabPanel value={value} index={5}>
+        <Product/>
+      </TabPanel>
+      <TabPanel value={value} index={6}>
         Item Six
       </TabPanel>
     </div>

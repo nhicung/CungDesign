@@ -6,7 +6,7 @@ import GridTile from './GridTile.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: 150,
+    padding: 20,
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -15,7 +15,12 @@ const useStyles = makeStyles((theme) => ({
   },
   gridList: {
     width: 1000,
-    height: 550,
+    height: 950,
+    padding: 5,
+    // '&:hover':{
+    //   color: '#e6e6e6',
+    //   cursor: 'pointer',
+    // }
   },
   
   
