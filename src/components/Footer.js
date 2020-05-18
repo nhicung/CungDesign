@@ -6,7 +6,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { IconButton } from '@material-ui/core';
-import Logo from './logo.jpg';
+//import Logo from './logo.jpg';
 
 const Styles = styled.div`
     .footer{
@@ -24,8 +24,6 @@ const Styles = styled.div`
     a, .navbar-light .nav-link {
       font-size: 0.9em;
       color: white;
-      padding-right: 40px;
-      padding-left: 40px;
       &:hover { color: #d4d0c6; }
     }
     
@@ -43,16 +41,16 @@ export const Footer = () => (
     <div className = "footer">
       <Container>
         <div className='iconList'>
-        <IconButton className='IconButton'><FacebookIcon href="/home"/></IconButton>
-        <IconButton className='IconButton'><InstagramIcon href="/home"/></IconButton>
-        <IconButton className='IconButton'><EmailIcon href="/home"/></IconButton>
+        <IconButton className='IconButton' href="https://facebook.com/cungarttherapy" target ="_blank"><FacebookIcon/></IconButton>
+        <IconButton className='IconButton' href="https://instagram.com/cungdesign" target ="_blank"><InstagramIcon /></IconButton>
+        <IconButton className='IconButton' href="/home"><EmailIcon href="/home"/></IconButton>
         <IconButton className='IconButton'><TwitterIcon href="/home"/></IconButton>
         
         </div>
         <thead>
           <tr>
             <th><img 
-              src={Logo}
+              src='images/logo.jpg'
               width="60"
               height="60"
               alt="logo"/></th>

@@ -3,9 +3,9 @@ import Carousel from 'react-bootstrap/Carousel'
 import styled from 'styled-components';
 
 const Styles = styled.div`
-	.carousel-item  {
-		height: 550px;
-	}
+	// .carousel-item  {
+	// 	height: 550px;
+	// }
 	.carousel, .carousel-item{
 		width: 100%;
 	}

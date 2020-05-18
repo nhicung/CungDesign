@@ -5,7 +5,6 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Button from '@material-ui/core/Button';
 import tileData from './title';
-// import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
 
   gridList: {
     flexWrap: 'nowrap',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
   },
 
@@ -44,11 +42,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function handleClick() {
-  window.open("/gallery");
-}
+// function handleClick() {
+//   window.open("/gallery");
+// }
 
-export default function SingleLineGridList() {
+export default function SingleLineGridList(props) {
   const classes = useStyles();
 
   return (
@@ -68,9 +66,12 @@ export default function SingleLineGridList() {
         ))}
       </GridList>
       <div className={classes.moreButton}>
-      <Button onClick={handleClick}>
-        More Painting
-      </Button>
+      <Button size="small" variant="outlined" color='#665544' onClick={() => {
+						props.switchPage(2);
+						window.scrollTo(0, 0);
+					}}>
+						More Painting
+          </Button>
       </div>
     </div>
   );
