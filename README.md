@@ -44,7 +44,7 @@ This website is for:
 * Use art as a psychological therapy
 
 ## View
-![](screenshot/Gallery.gif)
+![](screenshot/GalleryGif.gif)
 ![](screenshot/HomePage.gif)
 
 ## Technology
