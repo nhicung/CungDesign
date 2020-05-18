@@ -45,7 +45,6 @@ This website is for:
 
 ## View
 ![](screenshot/GalleryGif.gif)
-
 ![](screenshot/HomePage.gif)
 
 ## Technology
