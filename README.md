@@ -44,7 +44,7 @@ This website is for:
 * Use art as a psychological therapy
 
 ## View
-![](screenshot/GalleryGif.gif)
+<img src="https://github.com/nhicung/SquishySquirrel/blob/master/images/Gallery.gif" width="480" height="262" />
 ![](screenshot/HomePage.gif)
 
 ## Technology
