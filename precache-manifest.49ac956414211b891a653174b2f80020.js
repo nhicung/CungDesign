@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ff40d056beca14607a2fc5b5984c626",
+    "revision": "c4b9c9450311728bc12ec77446323447",
     "url": "/CungDesign/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CungDesign/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "d3d63bbb093b5d6ee8d1",
+    "revision": "2bd2f7e02f4b1e02bfe8",
     "url": "/CungDesign/static/css/main.2f0b291b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CungDesign/static/js/2.07dd332b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3d63bbb093b5d6ee8d1",
-    "url": "/CungDesign/static/js/main.c4364407.chunk.js"
+    "revision": "2bd2f7e02f4b1e02bfe8",
+    "url": "/CungDesign/static/js/main.c29700d9.chunk.js"
   },
   {
     "revision": "270ded6fe2c9b2f6eff0",
