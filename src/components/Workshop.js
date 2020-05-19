@@ -11,6 +11,7 @@ const Style = styled.div`
 .title{
 	padding-top: 20px;
 	color: #665544;
+	text-align: center;
 }
 .container {
 	padding-top: 20px;
@@ -41,11 +42,6 @@ const Style = styled.div`
 	font-size: 15px;
 }
 
-.intro{
-	padding-top: 100px;
-	color: #665544
-}
-
 .signup {
 	color: #665544;
 	padding-bottom: 70px;
@@ -70,7 +66,7 @@ const StyleButton = styled.button`
 export const Workshop = () => (
 	<Style>
 		<div className='title'>
-			<h1>Event this Week!</h1></div>
+			<h1>Up Coming Event</h1></div>
 		<Container>
 			<div className='event'>
 				<img
@@ -103,7 +99,7 @@ export const Workshop = () => (
 			</div>
 		</Container>
 
-		<div className="intro">
+		<div className="title">
 			<h1>Let's get painting!</h1>
 			<p>Sign up for our workshop</p>
 			<BreakLine w="50%" />
