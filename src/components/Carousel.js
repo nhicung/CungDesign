@@ -34,8 +34,8 @@ export const CarouselHandler = () => (
 				/>
 				<Carousel.Caption>
 					<div className='caption'>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<h3>Woodland Scent</h3>
+						<p font-style='italic'>"Into the Woods"</p>
 					</div>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -43,12 +43,12 @@ export const CarouselHandler = () => (
 				<img
 					className="d-block w-100"
 					src='images/slide2.jpg'
-					alt="Third slide"
+					alt="Second slide"
 				/>
 				<Carousel.Caption>
 					<div className='caption'>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<h3>Golden Autumn</h3>
+						<p font-style='italic'>"The sky, the river and the leaves"</p>
 					</div>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -60,8 +60,8 @@ export const CarouselHandler = () => (
 				/>
 				<Carousel.Caption>
 					<div className='caption'>
-						<h3>Third slide label</h3>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+						<h3>TRed Silk Cotton Tree</h3>
+						<p font-style='italic'>"Memory of the old backyard"</p>
 					</div>
 				</Carousel.Caption>
 			</Carousel.Item>

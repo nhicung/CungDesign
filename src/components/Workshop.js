@@ -76,7 +76,7 @@ export const Workshop = () => (
 					height={250} />
 
 				<div className='description'>
-					<h5>Event 1</h5>
+					<h5>Ancient Quarter</h5>
 					<hr color='#665544'></hr>
 					<p>Time: </p>
 					<p>Place: </p>
@@ -90,7 +90,7 @@ export const Workshop = () => (
 					width={200}
 					height={250} />
 				<div className='description'>
-					<h5>Event 2</h5>
+					<h5>Lotus Flower</h5>
 					<hr color='#665544'></hr>
 					<p>Time: </p>
 					<p>Place: </p>

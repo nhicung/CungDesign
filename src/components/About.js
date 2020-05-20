@@ -102,8 +102,8 @@ export default function VerticalTabs() {
           <div className={classes.info}>
             <img
               width={600}
-              height={350}
-              alt="300*450"
+              height={450}
+              alt="600*350"
               src="images/AboutUs2.jpg"
             />
             <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -117,8 +117,8 @@ export default function VerticalTabs() {
           <div className={classes.info}>
             <img
               width={600}
-              height={350}
-              alt="300*450"
+              height={450}
+              alt="600*350"
               src="images/AboutUs3.jpg"
             />
 
@@ -133,8 +133,8 @@ export default function VerticalTabs() {
           <div className={classes.info}>
             <img
               width={600}
-              height={350}
-              alt="300*450"
+              height={450}
+              alt="600*450"
               src="images/Inspiration1.jpg"
             />
 

@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#ffffff',
     maxWidth: '90%',
     '&:hover': {
-      color: '#e6e6e6',
+      backgroundColor: '#e6e6e6',
       cursor: 'pointer',
     }
   },
