@@ -56,8 +56,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   content: {
-    flexGrow: 1,
-    width: '200px',
+    // flexGrow: 1,
+    width: '80%',
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
   },
@@ -65,6 +65,11 @@ const useStyles = makeStyles((theme) => ({
   info: {
     display: 'flex',
 		flexDirection: 'row',
+  },
+
+  img:{
+    height: 450,
+    width:600,
   },
 
   text :{
@@ -100,10 +105,8 @@ export default function VerticalTabs() {
         {/* <div className={classes.toolbar} /> */}
         <TabPanel value={value} index={0}>
           <div className={classes.info}>
-            <img
-              width={600}
-              height={450}
-              alt="600*350"
+            <img className={classes.img}
+              alt="600*450"
               src="images/AboutUs2.jpg"
             />
             <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -116,9 +119,8 @@ export default function VerticalTabs() {
         <TabPanel value={value} index={1}>
           <div className={classes.info}>
             <img
-              width={600}
-              height={450}
-              alt="600*350"
+              className={classes.img}
+              alt="600*450"
               src="images/AboutUs3.jpg"
             />
 
@@ -132,8 +134,7 @@ export default function VerticalTabs() {
         <TabPanel value={value} index={2}>
           <div className={classes.info}>
             <img
-              width={600}
-              height={450}
+              className={classes.img}
               alt="600*450"
               src="images/Inspiration1.jpg"
             />

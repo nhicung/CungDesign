@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
 	section: {
 		paddingBottom: 100,
 	},
+	text:{
+		textAlign:'left',
+	}
 
 }));
 

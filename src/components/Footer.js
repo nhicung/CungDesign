@@ -93,7 +93,7 @@ export default function Footer(props) {
                 <ListItemText primary="FAQs"onClick={() => {
                 props.switchPage(7);
                 window.scrollTo({
-                  top: 200,
+                  top: 400,
                   behavior: 'smooth'
                   });
               }}>
@@ -114,7 +114,7 @@ export default function Footer(props) {
                 <ListItemText primary="Privacy Policy" onClick={() => {
                 props.switchPage(7);
                 window.scrollTo({
-                  top: 100,
+                  top: 200,
                   behavior: 'smooth'
                   });
               }}>
@@ -127,13 +127,7 @@ export default function Footer(props) {
               </ListItemText>
               </ListItem>
               <ListItem className={classes.item}>
-                <ListItemText primary="Cell: XXX(XXX)-XXXX"onClick={() => {
-                props.switchPage(7);
-                window.scrollTo({
-                  top: 200,
-                  behavior: 'smooth'
-                  });
-              }}>
+                <ListItemText primary="Cell: XXX(XXX)-XXXX">
                 </ListItemText>
               </ListItem>
             </List>
