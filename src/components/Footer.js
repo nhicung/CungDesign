@@ -9,6 +9,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { IconButton } from '@material-ui/core';
+import Link from '@material-ui/core/Link';
 // import classes from '*.module.css';
 //import Logo from './logo.jpg';
 
@@ -27,10 +28,15 @@ const useStyles = makeStyles((theme) => ({
   },
 
   item:{
+    color: 'white',
     '&:hover': { 
       color: '#d4d0c6',
       cursor: 'pointer',
+      textDecoration: 'none',
     }
+  },
+  link:{
+    color: 'white',
   },
 
   list: {
@@ -122,9 +128,12 @@ export default function Footer(props) {
               </ListItem>
             </List>
             <List component='nav' className={classes.list}>
-              <ListItem className={classes.item} >
-                <ListItemText primary="Email" href={"mailto:" + props.email}>
-              </ListItemText>
+              <ListItem>
+                
+                  <ListItemText>
+                  <a className={classes.item} href={"mailto:" + props.email}>Email
+                  </a>
+                  </ListItemText>
               </ListItem>
               <ListItem className={classes.item}>
                 <ListItemText primary="Cell: XXX(XXX)-XXXX">
