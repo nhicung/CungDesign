@@ -81,6 +81,12 @@ const tileData = [
     title: 'Fall in Love',
     // author: '821292',
   },
+  {
+    img: 'images/AboutUs2.jpg',
+    title: 'About Us',
+    // author: '821292',
+  },
+ 
 ];
 
 export default tileData;
