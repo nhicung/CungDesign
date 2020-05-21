@@ -9,10 +9,13 @@ import Box from '@material-ui/core/Box';
 import About from './About'
 import { Home } from './Home'
 import Gallery from './Gallery'
+import FooterInfo from './FooterInfo'
 import { Product } from './Product'
 import { Workshop } from './Workshop'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+
+import  Footer  from './Footer';
 //import Logo from '../../public/images/logo.jpg';
 
 const theme = createMuiTheme({
@@ -73,51 +76,59 @@ export default function ScrollableTabsButtonAuto() {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="sticky" color="default">
-        <ThemeProvider theme={theme}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            indicatorColor="primary"
-            textColor="primary"
-            centered
-            aria-label="scrollable auto tabs example"
-          >
-            <img
-              src='images/logo.jpg'
-              width="60"
-              height="60"
-              alt="logo" />
-            <Tab label="Home" {...a11yProps(1)} />
-            <Tab label="Gallery" {...a11yProps(2)} />
-            <Tab label="Workshop" {...a11yProps(3)} />
-            <Tab label="About" {...a11yProps(4)} />
-            <Tab label="Products" {...a11yProps(5)} />
-            <Tab label="Blog" {...a11yProps(6)} />
-          </Tabs>
-        </ThemeProvider>
-      </AppBar>
-      <TabPanel value={value} index={1}>
-        <Home
-          switchPage={setValue}
-        ></Home>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <Gallery/>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Workshop/>
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        <About/>
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        <Product/>
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Six
-      </TabPanel>
-    </div>
+    <React.Fragment>
+      <div className={classes.root}>
+        <AppBar position="sticky" color="default">
+          <ThemeProvider theme={theme}>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              indicatorColor="primary"
+              textColor="primary"
+              centered
+              aria-label="scrollable auto tabs example"
+            >
+              <img
+                src='images/logo.jpg'
+                width="60"
+                height="60"
+                alt="logo" />
+              <Tab label="Home" {...a11yProps(1)} />
+              <Tab label="Gallery" {...a11yProps(2)} />
+              <Tab label="Workshop" {...a11yProps(3)} />
+              <Tab label="About" {...a11yProps(4)} />
+              <Tab label="Products" {...a11yProps(5)} />
+              <Tab label="Blog" {...a11yProps(6)} />
+              {/* <Tab label="Terms"{...a11yProps(7)}/> */}
+            </Tabs>
+          </ThemeProvider>
+        </AppBar>
+        <TabPanel value={value} index={1}>
+          <Home
+            switchPage={setValue}
+          ></Home>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Gallery/>
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <Workshop/>
+        </TabPanel>
+        <TabPanel value={value} index={4}>
+          <About/>
+        </TabPanel>
+        <TabPanel value={value} index={5}>
+          <Product/>
+        </TabPanel>
+        <TabPanel value={value} index={6}>
+          Item Six
+        </TabPanel>
+        <TabPanel value={value} index={7}>
+          <FooterInfo>
+          </FooterInfo>
+        </TabPanel>
+      </div>
+      <Footer switchPage={setValue}></Footer>
+    </React.Fragment>
   );
 }

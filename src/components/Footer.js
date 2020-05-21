@@ -1,66 +1,145 @@
 import React from 'react';
-import { Container, Nav } from 'react-bootstrap';
-import styled from 'styled-components';
+import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { IconButton } from '@material-ui/core';
+// import classes from '*.module.css';
 //import Logo from './logo.jpg';
 
-const Styles = styled.div`
-    .footer{
-    width: 100%;
-    height: 225px;
-    flex-shrink: 0;
-    }
+const useStyles = makeStyles((theme) => ({
+  footer:{
+    backgroundColor: '#665544',
+    color: 'white',
+    width: '100%',
+    height: 225,
+    flexShrink: 0,
+  },
 
-    .copyright {
-      text-align: left;
-      padding-top: 20px;
-      font-size: 0.7em;
-    }
+  demo: {
+    display: 'flex',
+    color: 'white',
+  },
 
-    a, .navbar-light .nav-link {
-      font-size: 0.9em;
-      color: white;
-      &:hover { color: #d4d0c6; }
+  item:{
+    '&:hover': { 
+      color: '#d4d0c6',
+      cursor: 'pointer',
     }
+  },
+
+  list: {
+    paddingLeft: 60,
+  },
+
+  copyright: {
+      textAlign:'left',
+      paddingTop: 20,
+      fontSize: '0.7em',
+  },
+
+    // a, navbar-light .nav-link {
+    //   font-size: 0.9em;
+    //   color: white;
+    //   &:hover { color: #d4d0c6; }
+    // }
     
-    .iconList {
-      text-align: right;
-      // padding-top: 10px;
+  iconList: {
+    textAlign: 'right',
+    // padding-top: 10px;
+  },
+
+  IconButton: {
+    color: 'white',
+    '&:hover': { 
+      color: '#d4d0c6',
+      cursor: 'pointer',
     }
-    .IconButton {
-      color: white;
-      // margin: 1px;
-    }
-  `;
-export const Footer = () => (
-  <Styles>
-    <div className = "footer">
+  }
+}));
+
+export default function Footer(props) {
+  const classes = useStyles();
+
+  return (
+    <div className = {classes.footer}>
       <Container>
-        <div className='iconList'>
-        <IconButton className='IconButton' href="https://facebook.com/cungarttherapy" target ="_blank"><FacebookIcon/></IconButton>
-        <IconButton className='IconButton' href="https://instagram.com/cungdesign" target ="_blank"><InstagramIcon /></IconButton>
-        <IconButton className='IconButton' href="/home"><EmailIcon href="/home"/></IconButton>
-        <IconButton className='IconButton'><TwitterIcon href="/home"/></IconButton>
-        
+        <div className={classes.iconList}>
+        <IconButton className={classes.IconButton} href="https://facebook.com/cungarttherapy" target ="_blank"><FacebookIcon/></IconButton>
+        <IconButton className={classes.IconButton} href="https://instagram.com/cungdesign" target ="_blank"><InstagramIcon /></IconButton>
+        <IconButton className={classes.IconButton} href={"mailto:" + props.email}><EmailIcon /></IconButton>
+        <IconButton className={classes.IconButton}><TwitterIcon href="/home"/></IconButton>
         </div>
-        <thead>
-          <tr>
-            <th><img 
+            <div className={classes.demo}>
+            <img 
               src='images/logo.jpg'
-              width="60"
-              height="60"
-              alt="logo"/></th>
-            <th><Nav.Link href="/home">About </Nav.Link></th>
-            <th><Nav.Link eventKey="link-2">Terms & Condition</Nav.Link></th>
-            <th><Nav.Link eventKey="link-2">Privacy Policy</Nav.Link></th>  
-            <th><Nav.Link eventKey="link-1">Contact</Nav.Link></th> 
-          </tr>
-        </thead>
-        <tbody>
+              width='60'
+              height='60'
+              alt='logo'/>
+            <List component='nav' className={classes.list}>
+              <ListItem className={classes.item} >
+                <ListItemText primary="About" onClick={() => {
+                props.switchPage(4);
+                window.scrollTo(0,0);
+              }}>
+              </ListItemText>
+              </ListItem>
+              <ListItem className={classes.item}>
+                <ListItemText primary="FAQs"onClick={() => {
+                props.switchPage(7);
+                window.scrollTo({
+                  top: 200,
+                  behavior: 'smooth'
+                  });
+              }}>
+                </ListItemText>
+              </ListItem>
+            </List>
+            <List component='nav' className={classes.list}>
+              <ListItem className={classes.item} >
+                <ListItemText primary="Terms & Conditions" onClick={() => {
+                props.switchPage(7);
+                window.scrollTo(0,0);
+              }}>
+              </ListItemText>
+              </ListItem>
+            </List>
+            <List component='nav' className={classes.list}>
+              <ListItem className={classes.item} >
+                <ListItemText primary="Privacy Policy" onClick={() => {
+                props.switchPage(7);
+                window.scrollTo({
+                  top: 100,
+                  behavior: 'smooth'
+                  });
+              }}>
+              </ListItemText>
+              </ListItem>
+            </List>
+            <List component='nav' className={classes.list}>
+              <ListItem className={classes.item} >
+                <ListItemText primary="Email" href={"mailto:" + props.email}>
+              </ListItemText>
+              </ListItem>
+              <ListItem className={classes.item}>
+                <ListItemText primary="Cell: XXX(XXX)-XXXX"onClick={() => {
+                props.switchPage(7);
+                window.scrollTo({
+                  top: 200,
+                  behavior: 'smooth'
+                  });
+              }}>
+                </ListItemText>
+              </ListItem>
+            </List>
+          </div>
+
+        {/* <tbody>
           <tr>
             <td></td>
             <td><Nav.Link href="/home">FAQ</Nav.Link></td>
@@ -75,11 +154,11 @@ export const Footer = () => (
             <td></td>
             <td><Nav.Link href="/home">XXX-XXX-XXXX</Nav.Link></td>
           </tr>
-        </tbody>
-        <div className="copyright">
+        </tbody> */}
+        <div className={classes.copyright}>
           © Copyright 2020 CungDesign
         </div>
       </Container>
     </div>
-  </Styles>
-  )
+  );
+}
