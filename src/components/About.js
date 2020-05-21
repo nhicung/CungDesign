@@ -63,13 +63,14 @@ const useStyles = makeStyles((theme) => ({
   },
 
   setImg:{
-    display: 'flex',
-    flexDirection: 'row',
+    // display: 'flex',
+    // flexDirection: 'row',
   },
 
   img: {
     maxWidth: '50%',
-    padding:50,
+    height: 'auto',
+    paddingLeft:50,
   },
 
   text :{
