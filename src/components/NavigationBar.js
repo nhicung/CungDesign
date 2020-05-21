@@ -120,9 +120,6 @@ export default function ScrollableTabsButtonAuto() {
         <TabPanel value={value} index={5}>
           <Product/>
         </TabPanel>
-        <TabPanel value={value} index={6}>
-          Item Six
-        </TabPanel>
         <TabPanel value={value} index={7}>
           <FooterInfo>
           </FooterInfo>
