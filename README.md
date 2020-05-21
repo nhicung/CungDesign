@@ -1,4 +1,4 @@
-# CungDesign-ReactWebsite
+# CungDesign
 A website showcases art collection, using react libraries.
 
 ## Table of contents

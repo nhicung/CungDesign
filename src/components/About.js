@@ -62,14 +62,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
 
-  info: {
+  img: {
     display: 'flex',
-		flexDirection: 'row',
-  },
-
-  img:{
+    flexDirection: 'row',
     height: 450,
     width:600,
+    padding:50,
   },
 
   text :{
@@ -105,10 +103,16 @@ export default function VerticalTabs() {
         {/* <div className={classes.toolbar} /> */}
         <TabPanel value={value} index={0}>
           <div className={classes.info}>
-            <img className={classes.img}
+            <div  className={classes.img}>
+            <img
               alt="600*450"
-              src="images/AboutUs2.jpg"
+              src="images/Aboutus.jpg"
             />
+            <img
+              alt="600*450"
+              src="images/AboutUs3.jpg"
+            />
+            </div>
             <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
@@ -118,13 +122,18 @@ export default function VerticalTabs() {
 
         <TabPanel value={value} index={1}>
           <div className={classes.info}>
+          <div  className={classes.img}>
             <img
-              className={classes.img}
               alt="600*450"
-              src="images/AboutUs3.jpg"
+              src="images/Workshop1.jpg"
             />
+            <img
+              alt="600*450"
+              src="images/Workshop2.jpg"
+            />
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p className = {classes.text} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>
@@ -139,7 +148,7 @@ export default function VerticalTabs() {
               src="images/Inspiration1.jpg"
             />
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>
