@@ -29,7 +29,8 @@ export const Product = () => (
 			</Card>
 
 			<Card>
-				<Card.Img variant="top" src="holder.js/100px160" />
+				<Card.Img variant="top" src={tileData[10].img}
+					alt={tileData[10].title} />
 				<Card.Body>
 					<Card.Title>Item2</Card.Title>
 					<Card.Text>
@@ -40,7 +41,8 @@ export const Product = () => (
 			</Card>
 
 			<Card>
-				<Card.Img variant="top" src="holder.js/100px160" />
+				<Card.Img variant="top" src={tileData[6].img}
+					alt={tileData[6].title} />
 				<Card.Body>
 					<Card.Title>Item3</Card.Title>
 					<Card.Text>

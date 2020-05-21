@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     color: '#665544',
     display: 'flex',
-    height: 500,
+    height: 800,
   },
 
   tabs: {
@@ -68,8 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   img: {
-    height: 450,
-    width:600,
+    maxWidth: '90%',
     padding:50,
   },
 
