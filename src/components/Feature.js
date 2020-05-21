@@ -35,8 +35,8 @@ export default function SimpleContainer(props) {
 			<CssBaseline />
 			<Container className={classes.container} maxWidth="md">
 				<img
-					src={tileData[12].img}
-					alt={tileData[12].title}
+					src={tileData[15].img}
+					alt={tileData[15].title}
 					width={200}
 					height={250} />
 
@@ -66,8 +66,8 @@ export default function SimpleContainer(props) {
           </Button>
 				</div>
 				<img
-					src={tileData[8].img}
-					alt={tileData[8].title}
+					src={tileData[14].img}
+					alt={tileData[14].title}
 					width={200}
 					height={250} />
 			</Container>
