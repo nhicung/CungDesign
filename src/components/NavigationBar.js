@@ -98,7 +98,7 @@ export default function ScrollableTabsButtonAuto() {
               <Tab label="Workshop" {...a11yProps(3)} />
               <Tab label="About" {...a11yProps(4)} />
               <Tab label="Products" {...a11yProps(5)} />
-              <Tab label="Blog" {...a11yProps(6)} />
+              {/* <Tab label="Blog" {...a11yProps(6)} /> */}
               {/* <Tab label="Terms"{...a11yProps(7)}/> */}
             </Tabs>
           </ThemeProvider>
