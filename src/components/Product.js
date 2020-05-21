@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import styled from 'styled-components';
-
+import tileData from './otherImages';
 
 const Styles = styled.div`
 	.card-deck{
@@ -17,7 +17,8 @@ export const Product = () => (
 	<Styles>
 		<CardDeck>
 			<Card>
-				<Card.Img variant="top" src="holder.js/100px160" />
+				<Card.Img variant="top" src={tileData[12].img}
+					alt={tileData[12].title} />
 				<Card.Body>
 					<Card.Title>Item1</Card.Title>
 					<Card.Text>
