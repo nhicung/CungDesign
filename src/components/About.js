@@ -62,9 +62,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
 
-  img: {
+  setImg:{
     display: 'flex',
     flexDirection: 'row',
+  },
+
+  img: {
     height: 450,
     width:600,
     padding:50,
@@ -103,12 +106,12 @@ export default function VerticalTabs() {
         {/* <div className={classes.toolbar} /> */}
         <TabPanel value={value} index={0}>
           <div className={classes.info}>
-            <div  className={classes.img}>
-            <img
+            <div  className={classes.setImg}>
+            <img className={classes.img}
               alt="600*450"
               src="images/Aboutus.jpg"
             />
-            <img
+            <img className={classes.img}
               alt="600*450"
               src="images/AboutUs3.jpg"
             />
@@ -122,15 +125,15 @@ export default function VerticalTabs() {
 
         <TabPanel value={value} index={1}>
           <div className={classes.info}>
-          <div  className={classes.img}>
-            <img
-              alt="600*450"
-              src="images/Workshop1.jpg"
-            />
-            <img
-              alt="600*450"
-              src="images/Workshop2.jpg"
-            />
+            <div  className={classes.setImg}>
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Workshop1.jpg"
+              />
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Workshop2.jpg"
+              />
             </div>
 
             <p className = {classes.text} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -145,7 +148,7 @@ export default function VerticalTabs() {
             <img
               className={classes.img}
               alt="600*450"
-              src="images/Inspiration1.jpg"
+              src="images/Inspiration2.jpg"
             />
 
             <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
