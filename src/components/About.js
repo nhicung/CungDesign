@@ -90,6 +90,7 @@ export default function VerticalTabs() {
     <div className={classes.root}>
       <CssBaseline />
       <Tabs
+        indicatorColor="#665544"
         orientation="vertical"
         variant="scrollable"
         value={value}

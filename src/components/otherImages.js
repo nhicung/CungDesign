@@ -19,12 +19,6 @@ const tileData = [
     // author: 'Danson67',
   },
   {
-    img: 'images/LotusFlowerLake.JPG',
-    title: 'Lotus Flower Lake',
-    // author: 'fancycrave1',
-    featured: true,
-  },
-  {
     img: 'images/coater.JPG',
     title: 'Coater',
     // author: 'Hans',
@@ -75,6 +69,12 @@ const tileData = [
     img: 'images/totebag.JPG',
     title: 'Tote Bag',
     // author: '821292',
+  },
+  {
+    img: 'images/LotusFlowerLake.JPG',
+    title: 'Lotus Flower Lake',
+    // author: 'fancycrave1',
+    featured: true,
   },
   {
     img: 'images/TheLake.jpg',

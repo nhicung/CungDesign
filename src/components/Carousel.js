@@ -60,7 +60,7 @@ export const CarouselHandler = () => (
 				/>
 				<Carousel.Caption>
 					<div className='caption'>
-						<h3>TRed Silk Cotton Tree</h3>
+						<h3>The Red Silk Cotton Tree</h3>
 						<p font-style='italic'>"Memory of the old backyard"</p>
 					</div>
 				</Carousel.Caption>
