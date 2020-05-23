@@ -83,7 +83,7 @@ export default function ScrollableTabsButtonAuto() {
             <Tabs
               value={value}
               onChange={handleChange}
-              indicatorColor="#665544"
+              indicatorColor="primary"
               textColor="primary"
               centered
               aria-label="scrollable auto tabs example"
@@ -96,7 +96,7 @@ export default function ScrollableTabsButtonAuto() {
               <Tab label="Home" {...a11yProps(1)} />
               <Tab label="Gallery" {...a11yProps(2)} />
               <Tab label="Workshop" {...a11yProps(3)} />
-              <Tab label="About" {...a11yProps(4)} />
+              <Tab color = '#665544' label="About" {...a11yProps(4)} />
               <Tab label="Products" {...a11yProps(5)} />
               {/* <Tab label="Blog" {...a11yProps(6)} /> */}
               {/* <Tab label="Terms"{...a11yProps(7)}/> */}

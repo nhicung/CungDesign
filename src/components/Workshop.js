@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
 import tileData from './title';
+import SubmitForm from './SubmitForm';
 
 const Style = styled.div`
 .title{
@@ -99,63 +100,6 @@ export const Workshop = () => (
 			</div>
 		</Container>
 
-		<div className="title">
-			<h1>Let's get painting!</h1>
-			<p>Sign up for our workshop</p>
-			<BreakLine w="50%" />
-		</div>
-		<div className="signup">
-			<Form>
-				<Form.Group as={Row} controlId="formHorizontalEmail">
-					<Form.Label column sm={2}>
-						Your Name
-                    </Form.Label>
-					<Col sm={10}>
-						<Form.Control type="email" placeholder="Name" />
-					</Col>
-				</Form.Group>
-
-				<Form.Group as={Row} controlId="formHorizontalPassword">
-					<Form.Label column sm={2}>
-						Event
-                    </Form.Label>
-					<Col sm={10}>
-						<Form.Control type="email" placeholder="Event" />
-					</Col>
-				</Form.Group>
-				<fieldset>
-					<Form.Group as={Row}>
-						<Form.Label as="legend" column sm={2}>
-							Payment Type
-                        </Form.Label>
-						<Col sm={10}>
-							<Form.Check
-								type="radio"
-								label="cash"
-								name="formHorizontalRadios"
-								id="formHorizontalRadios1"
-							/>
-							<Form.Check
-								type="radio"
-								label="credit card"
-								name="formHorizontalRadios"
-								id="formHorizontalRadios2"
-							/>
-						</Col>
-					</Form.Group>
-				</fieldset>
-				<Form.Group as={Row} controlId="formHorizontalCheck">
-					<Col sm={{ span: 10, offset: 2 }}>
-						<p>By clicking confirmation you agree to our Terms & Condition</p>
-					</Col>
-				</Form.Group>
-
-				<Form.Group as={Row}>
-					<Col sm={{ span: 10, offset: 2 }}>
-						<StyleButton type="submit">Confirm</StyleButton>
-					</Col>
-				</Form.Group>
-			</Form>
-		</div>
+		<SubmitForm></SubmitForm>
 	</Style>
 )
