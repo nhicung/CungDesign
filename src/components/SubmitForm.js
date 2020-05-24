@@ -38,12 +38,13 @@ export default function FormExample() {
 	const handleSubmit = (event) => {
 		const form = event.currentTarget;
 		if (form.checkValidity() === false) {
-			setShow(false);
 			event.preventDefault();
 			event.stopPropagation();
+			setValidated(true);
+		} else {
+			event.preventDefault(); 
+			setShow(true);
 		}
-		setValidated(true);
-		setShow(true);
 	};
 
 	return (
@@ -127,12 +128,12 @@ export default function FormExample() {
 
 					<Form.Group as={Row}>
 						<Col sm={{ span: 10, offset: 2 }}>
-							<StyleButton >Confirm</StyleButton>
+							<button >Confirm</button>
 						</Col>
 					</Form.Group>
 				</Form>
 
-				<Modal centered show={show} onHide={handleClose}>
+				<Modal backdrop = 'static' centered show={show} onHide={handleClose}>
 					<Modal.Header closeButton>
 						<Modal.Title>Modal heading</Modal.Title>
 					</Modal.Header>
