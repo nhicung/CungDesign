@@ -28,7 +28,7 @@ const StyleButton = styled.button`
 	padding: 8px;
 	&:hover { background-color: #d4d0c6; color:#665544 }`
 
-export default function FormExample() {
+export default function FormExample(props) {
 	const [validated, setValidated] = React.useState(false);
 	const [show, setShow] = React.useState(false);
 
@@ -134,16 +134,16 @@ export default function FormExample() {
 				</Form>
 
 				<Modal backdrop = 'static' centered show={show} onHide={handleClose}>
-					<Modal.Header closeButton>
-						<Modal.Title>Modal heading</Modal.Title>
+					<Modal.Header>
+						<Modal.Title>Form Submitted</Modal.Title>
 					</Modal.Header>
-					<Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+					<Modal.Body>Thank you for submitting the form!</Modal.Body>
 					<Modal.Footer>
-						<StyleButton variant="secondary" onClick={handleClose}>
-							Close
-          </StyleButton>
-						<StyleButton variant="primary" onClick={handleClose}>
-							Save Changes
+						<StyleButton variant="primary" onClick={() => {
+							window.scrollTo(0, 0);
+							props.switchPage(1);
+					}}>
+							Go back to Home page
           </StyleButton>
 					</Modal.Footer>
 				</Modal>

@@ -64,7 +64,7 @@ const StyleButton = styled.button`
 	padding: 8px;
 	&:hover { background-color: #d4d0c6; color:#665544 }`
 
-export const Workshop = () => (
+export const Workshop = (props) => (
 	<Style>
 		<div className='title'>
 			<h1>Up Coming Event</h1></div>
@@ -100,6 +100,6 @@ export const Workshop = () => (
 			</div>
 		</Container>
 
-		<SubmitForm></SubmitForm>
+		<SubmitForm switchPage={props.switchPage}></SubmitForm>
 	</Style>
 )

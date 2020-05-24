@@ -83,6 +83,7 @@ export default function ScrollableTabsButtonAuto() {
             <Tabs
               value={value}
               onChange={handleChange}
+              onClick = {window.scrollTo(0, 0)}
               indicatorColor="primary"
               textColor="primary"
               centered
@@ -112,7 +113,9 @@ export default function ScrollableTabsButtonAuto() {
           <Gallery/>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <Workshop/>
+          <Workshop
+          switchPage={setValue}>
+          </Workshop>
         </TabPanel>
         <TabPanel value={value} index={4}>
           <About/>
