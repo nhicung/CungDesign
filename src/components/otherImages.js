@@ -9,68 +9,84 @@ const tileData = [
     featured: true,
   },
   {
-    img: 'images/cotton.jpg',
-    title: 'Cotton Tree',
+    img: 'images/bag.JPG',
+    title: 'Bag',
     // author: 'director90',
   },
   {
-    img: 'images/butterflyEff.jpg',
-    title: 'Butterfly Effect',
+    img: 'images/bookmarkset.JPG',
+    title: 'Bookmark Set',
     // author: 'Danson67',
   },
   {
-    img: 'images/LotusFlowerLake.jpg',
+    img: 'images/coater.JPG',
+    title: 'Coater',
+    // author: 'Hans',
+  },
+  {
+    img: 'images/Painting.JPG',
+    title: 'Painting',
+    // author: 'fancycravel',
+  },
+  {
+    img: 'images/paintingwblackframe.JPG',
+    title: 'Painting with Black Frame',
+    // author: 'jill111',
+    cols: 2,
+  },
+  {
+    img: 'images/postcard1.JPG',
+    title: 'Post Card',
+    // author: 'BkrmadtyaKarki',
+  },
+  {
+    img: 'images/postcard2.JPG',
+    title: 'PostCard',
+    // author: 'PublicDomainPictures',
+  },
+  {
+    img: 'images/postcardset1.JPG',
+    title: 'Post Card Set1',
+    // author: 'congerdesign',
+  },
+  {
+    img: 'images/postcardset2.JPG',
+    title: 'Post Card Set2',
+    cols: 2,
+    // author: '821292',
+  },
+  {
+    img: 'images/settotebag.JPG',
+    title: 'Tote Bag Set',
+    // author: '821292',
+  },
+  {
+    img: 'images/smallpainting.JPG',
+    title: 'Small Painting',
+    // author: '821292',
+  },
+  {
+    img: 'images/totebag.JPG',
+    title: 'Tote Bag',
+    // author: '821292',
+  },
+  {
+    img: 'images/LotusFlowerLake.JPG',
     title: 'Lotus Flower Lake',
     // author: 'fancycrave1',
     featured: true,
   },
   {
-    img: 'images/hanoi.jpg',
-    title: 'Hanoi',
-    // author: 'Hans',
-  },
-  {
-    img: 'images/AntiqueStreet.jpg',
-    title: 'Antique Street',
-    // author: 'fancycravel',
-  },
-  {
-    img: 'images/RedSun.jpg',
-    title: 'Red Sun',
-    // author: 'jill111',
-    cols: 2,
-  },
-  {
-    img: 'images/TheFall.jpg',
-    title: 'The Fall',
-    // author: 'BkrmadtyaKarki',
-  },
-  {
     img: 'images/TheLake.jpg',
-    title: 'The Lake',
-    // author: 'PublicDomainPictures',
-  },
-  {
-    img: 'images/TheWinter.jpg',
-    title: 'The Winter',
-    // author: 'congerdesign',
-  },
-  {
-    img: 'images/WinterSnow.jpg',
-    title: 'Winter Snow',
-    cols: 2,
+    title: 'Fall in Love',
     // author: '821292',
   },
   {
-    img: 'images/BytheWindow.jpg',
-    title: 'By the Window',
+    img: 'images/AboutUs2.jpg',
+    title: 'About Us',
     // author: '821292',
   },
-  {
-    img: 'images/PlayingwPaint.jpg',
-    title: 'Playing with Paint',
-    // author: '821292',
-  },
+ 
 ];
 
 export default tileData;

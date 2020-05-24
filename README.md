@@ -1,4 +1,4 @@
-# CungDesign-ReactWebsite
+# CungDesign
 A website showcases art collection, using react libraries.
 
 ## Table of contents
@@ -56,5 +56,5 @@ This website is for:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
-* Contributor: Hung Cung
+* Contributor: Hung Cung (artist)
 * Inspiration: Cung Design

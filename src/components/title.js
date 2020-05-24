@@ -45,7 +45,7 @@ const tileData = [
     // author: 'BkrmadtyaKarki',
   },
   {
-    img: 'images/TheLake.jpg',
+    img: 'images/FallInLove.JPG',
     title: 'The Lake',
     // author: 'PublicDomainPictures',
   },

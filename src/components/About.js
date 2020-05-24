@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     color: '#665544',
     display: 'flex',
-    height: 500,
+    height: 800,
   },
 
   tabs: {
@@ -56,15 +56,21 @@ const useStyles = makeStyles((theme) => ({
   },
 
   content: {
-    flexGrow: 1,
-    width: '200px',
+    // flexGrow: 1,
+    width: '80%',
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
   },
 
-  info: {
-    display: 'flex',
-		flexDirection: 'row',
+  setImg:{
+    // display: 'flex',
+    // flexDirection: 'row',
+  },
+
+  img: {
+    maxWidth: '50%',
+    height: 'auto',
+    paddingLeft:50,
   },
 
   text :{
@@ -84,6 +90,7 @@ export default function VerticalTabs() {
     <div className={classes.root}>
       <CssBaseline />
       <Tabs
+        indicatorColor="#665544"
         orientation="vertical"
         variant="scrollable"
         value={value}
@@ -100,12 +107,16 @@ export default function VerticalTabs() {
         {/* <div className={classes.toolbar} /> */}
         <TabPanel value={value} index={0}>
           <div className={classes.info}>
-            <img
-              width={600}
-              height={350}
-              alt="300*450"
-              src="images/AboutUs2.jpg"
+            <div  className={classes.setImg}>
+            <img className={classes.img}
+              alt="600*450"
+              src="images/Aboutus.jpg"
             />
+            <img className={classes.img}
+              alt="600*450"
+              src="images/AboutUs3.jpg"
+            />
+            </div>
             <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
@@ -115,14 +126,18 @@ export default function VerticalTabs() {
 
         <TabPanel value={value} index={1}>
           <div className={classes.info}>
-            <img
-              width={600}
-              height={350}
-              alt="300*450"
-              src="images/AboutUs3.jpg"
-            />
+            <div  className={classes.setImg}>
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Workshop1.jpg"
+              />
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Workshop2.jpg"
+              />
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p className = {classes.text} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>
@@ -132,13 +147,12 @@ export default function VerticalTabs() {
         <TabPanel value={value} index={2}>
           <div className={classes.info}>
             <img
-              width={600}
-              height={350}
-              alt="300*450"
-              src="images/Inspiration1.jpg"
+              className={classes.img}
+              alt="600*450"
+              src="images/Inspiration2.jpg"
             />
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>

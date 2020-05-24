@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: 1000,
+    width: '100%',
     height: 950,
     padding: 5,
     // '&:hover':{
@@ -31,7 +31,7 @@ export default function Gallery() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={25} className={classes.gridList} cols={2}>
+      <GridList cellHeight={25} className={classes.gridList} cols={3}>
         {tileData.map((tile) => (
           <GridTile
           tile={tile}

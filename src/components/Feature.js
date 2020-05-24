@@ -35,20 +35,20 @@ export default function SimpleContainer(props) {
 			<CssBaseline />
 			<Container className={classes.container} maxWidth="md">
 				<img
-					src={tileData[12].img}
-					alt={tileData[12].title}
+					src={tileData[15].img}
+					alt={tileData[15].title}
 					width={200}
 					height={250} />
 
 				<div className={classes.description}>
 					<h3>Who are we?</h3>
 					<hr color='#665544'></hr>
-					<p>dshf skjhf kdjhf kjfh sdkhf kfjdhs lhf kdjhf jkhjf hf lkaj;lkjc hskla shkaj;.jc kv ksdcn a ckjv djvh kdjslkj kfdjhvk f</p>
+					<p>CungDesign captures the beautiful moment of nature, human and life. We bring creativity to inspire the art in each person.</p>
 					<Button size="small" variant="outlined" color='#665544' onClick={() => {
 						props.switchPage(4);
 						window.scrollTo(0, 0);
 					}}>
-						Read More
+						Learn More
           </Button>
 				</div>
 			</Container>
@@ -57,17 +57,17 @@ export default function SimpleContainer(props) {
 				<div className={classes.description}>
 					<h3>Painting of the Week</h3>
 					<hr color='#665544'></hr>
-					<p>dshf skjhf kdjhf kjfh sdkhf kfjdhs lhf kdjhf jkhjf hf lkaj;lkjc hskla shkaj;.jc kv ksdcn a ckjv djvh kdjslkj kfdjhvk f</p>
+					<p>"Fall in Love" is the theme painting of this week. Painted with Acrylic paints and captured while wandring around to see these beautiful pair of swans  </p>
 					<Button size="small" variant="outlined" color='#665544' onClick={() => {
 						props.switchPage(2);
 						window.scrollTo(0, 0);
 					}}>
-						See More
+						See Other Paintings
           </Button>
 				</div>
 				<img
-					src={tileData[8].img}
-					alt={tileData[8].title}
+					src={tileData[14].img}
+					alt={tileData[14].title}
 					width={200}
 					height={250} />
 			</Container>

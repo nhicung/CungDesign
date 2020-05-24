@@ -40,10 +40,19 @@ const useStyles = makeStyles((theme) => ({
     }
   },
 
-  imgHover: {
+  imgIdle: {
     // maxHeight: '80%',
     maxWidth: '90%',
     
+  },
+
+  imgHover:{
+    backgroundColor: '#ffffff',
+    maxWidth: '90%',
+    '&:hover': {
+      backgroundColor: '#e6e6e6',
+      cursor: 'pointer',
+    }
   },
 
   icon: {
@@ -107,10 +116,11 @@ export default function GridTile(props) {
         root: classes.root,
       }}>
       <div className = {classes.space} > 
-        <img className ={classes.imgHover} 
+        <img className ={classes.imgIdle} 
         src={props.tile.img} 
         alt={props.tile.title} 
         onClick={handleOpen} />
+        <div className = {classes.imgHover}></div>
       
         <GridListTileBar
           className={classes.titleBar}
