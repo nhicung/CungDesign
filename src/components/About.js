@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     maxWidth: '30%',
     height: 'auto',
-    padding: '3%',
+    padding: '8%',
   },
 
   text: {
@@ -95,6 +95,7 @@ export default function VerticalTabs() {
     <div className={classes.root}>
       <CssBaseline />
       <Tabs
+        inkBarStyle={{background: 'blue'}}
         indicatorColor="#665544"
         orientation="vertical"
         variant="scrollable"
@@ -158,7 +159,7 @@ export default function VerticalTabs() {
               />
               <img className={classes.img}
                 alt="600*450"
-                src="images/Workshop5.jpg"
+                src="images/PlayingwPaint.jpg"
               />
             </div>
             <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

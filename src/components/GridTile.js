@@ -7,6 +7,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import CloseIcon from '@material-ui/icons/Close';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,12 +19,8 @@ const useStyles = makeStyles((theme) => ({
     // }
   },
 
-  title: {
-    color: 'white',
-  },
-
   titleBar: {
-    width:'90%',
+    width: '90%',
     margin: 'auto',
     background:
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
@@ -43,10 +40,10 @@ const useStyles = makeStyles((theme) => ({
   imgIdle: {
     // maxHeight: '80%',
     maxWidth: '90%',
-    
+
   },
 
-  imgHover:{
+  imgHover: {
     backgroundColor: '#ffffff',
     maxWidth: '90%',
     '&:hover': {
@@ -88,6 +85,13 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%',
   },
 
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: theme.palette.grey[500],
+  },
+
   description: {
     padding: '20px',
     width: '50%',
@@ -113,13 +117,13 @@ export default function GridTile(props) {
       classes={{
         root: classes.root,
       }}>
-      <div className = {classes.space} > 
-        <img className ={classes.imgIdle} 
-        src={props.tile.img} 
-        alt={props.tile.title} 
-        onClick={handleOpen} />
-        <div className = {classes.imgHover}></div>
-      
+      <div className={classes.space} >
+        <img className={classes.imgIdle}
+          src={props.tile.img}
+          alt={props.tile.title}
+          onClick={handleOpen} />
+        <div className={classes.imgHover}></div>
+
         <GridListTileBar
           className={classes.titleBar}
           title={props.tile.title}
@@ -153,6 +157,9 @@ export default function GridTile(props) {
                 id="transition-modal-title" />
             </div>
             <div className={classes.description}>
+              <IconButton aria-label="close" className={classes.closeButton} >
+                <CloseIcon />
+              </IconButton>
               <h5>Name:</h5>
               <p>Type of Paint: </p>
               <p>Type of Paper: </p>
