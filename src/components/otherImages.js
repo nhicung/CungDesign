@@ -20,7 +20,7 @@ const tileData = [
   },
   {
     img: 'images/coater.JPG',
-    title: 'Coater',
+    title: 'Coaster',
     // author: 'Hans',
   },
   {
