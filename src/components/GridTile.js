@@ -72,8 +72,6 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: 'middle',
     display: 'flex',
     flexDirection: 'row',
-    // border: '2px solid #000',
-    // boxShadow: theme.shadows[5],
     padding: theme.spacing(4, 4, 4),
   },
 
@@ -125,7 +123,6 @@ export default function GridTile(props) {
         <GridListTileBar
           className={classes.titleBar}
           title={props.tile.title}
-          subtitle={<span>by: {props.tile.author}</span>}
           actionIcon={
             <IconButton aria-label={`info about ${props.tile.title}`} className={classes.icon} onClick={handleOpen}>
               <InfoIcon />

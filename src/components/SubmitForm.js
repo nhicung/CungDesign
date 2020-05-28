@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import Modal from 'react-bootstrap/Modal'
+import { Link } from "react-router-dom";
 
 const Style = styled.div`
 .signup {
@@ -33,7 +34,6 @@ export default function FormExample(props) {
 	const [show, setShow] = React.useState(false);
 
 	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
 
 	const handleSubmit = (event) => {
 		const form = event.currentTarget;
@@ -42,7 +42,7 @@ export default function FormExample(props) {
 			event.stopPropagation();
 			setValidated(true);
 		} else {
-			event.preventDefault(); 
+			event.preventDefault();
 			setShow(true);
 		}
 	};
@@ -133,18 +133,19 @@ export default function FormExample(props) {
 					</Form.Group>
 				</Form>
 
-				<Modal backdrop = 'static' centered show={show} onHide={handleClose}>
+				<Modal backdrop='static' centered show={show} onHide={handleClose}>
 					<Modal.Header>
 						<Modal.Title>Form Submitted</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>Thank you for submitting the form!</Modal.Body>
 					<Modal.Footer>
-						<StyleButton variant="primary" onClick={() => {
-							window.scrollTo(0, 0);
-							props.switchPage(1);
-					}}>
-							Go back to Home page
-          </StyleButton>
+						<Link to='/'>
+							<StyleButton variant="primary" onClick={() => {
+								window.scrollTo(0, 0);
+							}}>
+								Go back to Home page
+          					</StyleButton>
+						</Link>
 					</Modal.Footer>
 				</Modal>
 			</div>

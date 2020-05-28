@@ -55,6 +55,11 @@ const useStyles = makeStyles((theme) => ({
     width: 150,
   },
 
+  // tab: {
+  //   padding: '12px 25px',
+  //   textAlign:'justify',
+  // },
+
   content: {
     // flexGrow: 1,
     width: '80%',
@@ -62,18 +67,18 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
 
-  setImg:{
-    // display: 'flex',
-    // flexDirection: 'row',
+  setImg: {
+    textAlign: 'center',
+    padding: '3%'
   },
 
   img: {
     maxWidth: '30%',
     height: 'auto',
-    paddingLeft:50,
+    padding: '3%',
   },
 
-  text :{
+  text: {
     padding: 10,
   }
 }));
@@ -98,26 +103,26 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         className={classes.tabs}>
 
-        <Tab label="About Us" {...a11yProps(0)} />
-        <Tab label="About CungDesign" {...a11yProps(1)} />
-        <Tab label="Inspiration" {...a11yProps(2)} />
+        <Tab className = {classes.tab} label="About Us" {...a11yProps(0)} />
+        <Tab className = {classes.tab} label="About CungDesign" {...a11yProps(1)} />
+        <Tab className = {classes.tab} label="Inspiration" {...a11yProps(2)} />
       </Tabs>
 
       <main className={classes.content}>
         {/* <div className={classes.toolbar} /> */}
         <TabPanel value={value} index={0}>
           <div className={classes.info}>
-            <div  className={classes.setImg}>
-            <img className={classes.img}
-              alt="600*450"
-              src="images/Aboutus.jpg"
-            />
-            <img className={classes.img}
-              alt="600*450"
-              src="images/AboutUs3.jpg"
-            />
+            <div className={classes.setImg}>
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Aboutus.jpg"
+              />
+              <img className={classes.img}
+                alt="600*450"
+                src="images/AboutUs3.jpg"
+              />
             </div>
-            <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>
@@ -126,7 +131,7 @@ export default function VerticalTabs() {
 
         <TabPanel value={value} index={1}>
           <div className={classes.info}>
-            <div  className={classes.setImg}>
+            <div className={classes.setImg}>
               <img className={classes.img}
                 alt="600*450"
                 src="images/Workshop1.jpg"
@@ -137,7 +142,7 @@ export default function VerticalTabs() {
               />
             </div>
 
-            <p className = {classes.text} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p className={classes.text} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>
@@ -146,13 +151,17 @@ export default function VerticalTabs() {
 
         <TabPanel value={value} index={2}>
           <div className={classes.info}>
-            <img
-              className={classes.img}
-              alt="600*450"
-              src="images/Inspiration2.jpg"
-            />
-
-            <p className = {classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <div className={classes.setImg}>
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Inspiration2.jpg"
+              />
+              <img className={classes.img}
+                alt="600*450"
+                src="images/Workshop5.jpg"
+              />
+            </div>
+            <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
             facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
               gravida rutrum quisque non tellus. </p>

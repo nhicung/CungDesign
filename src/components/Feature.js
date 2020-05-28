@@ -4,14 +4,13 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import tileData from './otherImages';
 import { makeStyles } from '@material-ui/core/styles';
-import { Switch, Route, Link, HashRouter, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
 		padding: 30,
 		border: '1px solid #665544',
 		height: '30%',
-		// textAlign: 'left',
 		marginTop: 50,
 		display: 'flex',
 		flexDirection: 'row',
@@ -20,20 +19,14 @@ const useStyles = makeStyles((theme) => ({
 		width: '70%',
 		color: '#665544',
 		padding: 70,
-		// alignContent: 'left',
-		// fontStyle: 'italic',
-		// fontFamily: 'courier',
 	},
 	moreButton:{
 		'&:hover': { 
 			color: '#d4d0c6',
 			cursor: 'pointer',
 			textDecoration: 'none',
-		  }
+		}
 	}
-	// @media (min-width: 900px) {
-	// 	width: 800px;
-	// },
 }));
 
 export default function SimpleContainer(props) {

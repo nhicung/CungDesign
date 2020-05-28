@@ -9,10 +9,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { IconButton } from '@material-ui/core';
-// import Link from '@material-ui/core/Link';
-import { Switch, Route, Link, HashRouter, Redirect } from "react-router-dom";
-// import classes from '*.module.css';
-//import Logo from './logo.jpg';
+import  {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   footer:{

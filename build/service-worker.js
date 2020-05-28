@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CungDesign/precache-manifest.133fc8ab425b9e80f69a232df6d62547.js"
+  "/CungDesign/precache-manifest.76b396292e411c83e4fc5680477d179e.js"
 );
 
 self.addEventListener('message', (event) => {

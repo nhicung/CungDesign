@@ -1,8 +1,4 @@
 import React from 'react';
-import { BreakLine } from './LineBreak'
-import Form from 'react-bootstrap/Form'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
 import tileData from './title';
@@ -10,7 +6,7 @@ import SubmitForm from './SubmitForm';
 
 const Style = styled.div`
 .title{
-	padding-top: 20px;
+	padding-top: 5%;
 	color: #665544;
 	text-align: center;
 }
@@ -18,7 +14,6 @@ const Style = styled.div`
 	padding-top: 20px;
 	width: 100%;
 	height: 30%;
-	text-align: center;
 	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
@@ -29,6 +24,7 @@ const Style = styled.div`
 	border: 1px solid #665544;
 	display: flex;
 	flex-direction: row;
+	padding: 2%;
 }
 .figure {
 	padding: 5%;
@@ -36,10 +32,7 @@ const Style = styled.div`
 .description {
 	width: 50%;
 	color: #665544;
-	padding: 10px;
-	align-content: center;
-	// font-style: italic;
-	// font-family: courier;
+	padding-left: 10%;
 	font-size: 15px;
 }
 
@@ -58,11 +51,6 @@ const Style = styled.div`
 	bacground-color: #665544;
 }
 `
-const StyleButton = styled.button`
-	color: white;
-	background-color: #665544;
-	padding: 8px;
-	&:hover { background-color: #d4d0c6; color:#665544 }`
 
 export const Workshop = (props) => (
 	<Style>
@@ -77,11 +65,11 @@ export const Workshop = (props) => (
 					height={250} />
 
 				<div className='description'>
-					<h5>Ancient Quarter</h5>
+					<h4>Ancient Quarter</h4>
 					<hr color='#665544'></hr>
+					<p>Description: </p>
 					<p>Time: </p>
 					<p>Place: </p>
-					<p>Description: </p>
 				</div>
 			</div>
 			<div className='event'>
@@ -91,15 +79,15 @@ export const Workshop = (props) => (
 					width={200}
 					height={250} />
 				<div className='description'>
-					<h5>Lotus Flower</h5>
+					<h4>Lotus Flower</h4>
 					<hr color='#665544'></hr>
+					<p>Description: </p>
 					<p>Time: </p>
 					<p>Place: </p>
-					<p>Description: </p>
 				</div>
 			</div>
 		</Container>
 
-		<SubmitForm switchPage={props.switchPage}></SubmitForm>
+		<SubmitForm></SubmitForm>
 	</Style>
 )
