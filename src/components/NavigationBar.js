@@ -46,12 +46,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const mapPath = {
-  '/': 1,
-  '/gallery': 2,
-  '/workshop':3,
-  '/about':4,
-  '/product':5,
-  '/info':6
+  '/CungDesign': 1,
+  '/CungDesign/': 1,
+  '/CungDesign/gallery': 2,
+  '/CungDesign/workshop':3,
+  '/CungDesign/about':4,
+  '/CungDesign/product':5,
+  '/CungDesign/info':6
 }
 
 export default function NavBar() {
@@ -65,6 +66,9 @@ export default function NavBar() {
   let location = useLocation();
 
   useEffect(() => {
+    if (location === null){
+      setValue(1);
+    }
     setValue(mapPath[location.pathname]);
     console.log(location);
   }, [location])
@@ -89,31 +93,31 @@ export default function NavBar() {
               alt="logo" />
             <Tab className={classes.list}
               label="Home"
-              component={Link} to="/"
+              component={Link} to= {process.env.PUBLIC_URL + "/"}
               onClick={() => {
                 window.scrollTo(0, 0);
               }} />
             <Tab className={classes.list}
               label="Gallery"
-              component={Link} to="/gallery"
+              component={Link} to={process.env.PUBLIC_URL + "/gallery"}
               onClick={() => {
                 window.scrollTo(0, 0);
               }} />
             <Tab className={classes.list}
               label="Workshop"
-              component={Link} to="/workshop"
+              component={Link} to={process.env.PUBLIC_URL + "/workshop"}
               onClick={() => {
                 window.scrollTo(0, 0);
               }} />
             <Tab className={classes.list}
               label="About"
-              component={Link} to="/about"
+              component={Link} to={process.env.PUBLIC_URL + "/about"}
               onClick={() => {
                 window.scrollTo(0, 0);
               }} />
             <Tab className={classes.list}
               label="Products"
-              component={Link} to="/product"
+              component={Link} to={process.env.PUBLIC_URL + "/product"}
               onClick={() => {
                 window.scrollTo(0, 0);
               }} />
@@ -121,13 +125,14 @@ export default function NavBar() {
         </ThemeProvider>
       </AppBar>
 
-      <Route value={1} exact path="" component={Home} render={() => (
-        <Redirect to="/home" />)} />
-      <Route value={2} path="/gallery" component={Gallery} />
-      <Route value={3} path="/workshop" component={Workshop} />
-      <Route value={4} path="/about" component={About} />
-      <Route value={5} path="/product" component={Product} />
-      <Route value={6} path="/info" component={FooterInfo} />
+      <Route value={1} exact path= {process.env.PUBLIC_URL + "/"} component={Home} render={() => (
+        <Redirect to="/home" />)} 
+      />
+      <Route value={2} path= {process.env.PUBLIC_URL + "/gallery"} component={Gallery} />
+      <Route value={3} path= {process.env.PUBLIC_URL + "/workshop"} component={Workshop} />
+      <Route value={4} path= {process.env.PUBLIC_URL + "/about"} component={About} />
+      <Route value={5} path= {process.env.PUBLIC_URL +"/product"} component={Product} />
+      <Route value={6} path= {process.env.PUBLIC_URL + "/info"} component={FooterInfo} />
       <Footer />
     </React.Fragment>
 
