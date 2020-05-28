@@ -69,7 +69,6 @@ const useStyles = makeStyles((theme) => ({
 
   setImg: {
     textAlign: 'center',
-    padding: '3%'
   },
 
   img: {
@@ -79,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   text: {
-    padding: 10,
+    paddingBottom: 10,
   }
 }));
 
