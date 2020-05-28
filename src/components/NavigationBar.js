@@ -1,5 +1,6 @@
-import React from 'react';
-import { Route, Link, HashRouter, Redirect } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { browserHistory } from 'react-router'
+import { Route, Link, HashRouter, Redirect, BrowserRouter, useLocation } from "react-router-dom";
 import { Home } from './Home';
 import About from './About';
 import Gallery from './Gallery';
@@ -44,6 +45,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const mapPath = {
+  '/': 1,
+  '/gallery': 2,
+  '/workshop':3,
+  '/about':4,
+  '/product':5,
+  '/info':6
+}
+
 export default function NavBar() {
   const classes = useStyles();
   const [value, setValue] = React.useState(1);
@@ -51,68 +61,76 @@ export default function NavBar() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  return (
-    <HashRouter>
-      <React.Fragment>
-        <AppBar color="default">
-          <ThemeProvider theme={theme}>
-            <Tabs
-              onChange={handleChange}
-              indicatorColor="primary"
-              textColor="primary"
-              centered
-              aria-label="scrollable auto tabs example"
-            >
-              <img
-                src='images/logo.jpg'
-                width="60"
-                height="60"
-                alt="logo" />
-              <Tab className={classes.list}
-                label="Home"
-                component={Link} to="/"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }} />
-              <Tab className={classes.list}
-                label="Gallery"
-                component={Link} to="/gallery"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }} />
-              <Tab className={classes.list}
-                label="Workshop"
-                component={Link} to="/workshop"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }} />
-              <Tab className={classes.list}
-                label="About"
-                component={Link} to="/about"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }} />
-              <Tab className={classes.list}
-                label="Products"
-                component={Link} to="/product"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }} />
-            </Tabs>
-          </ThemeProvider>
-        </AppBar>
-        <hr />
 
-        <Route value={value} exact path="/" component={Home} render={() => (
-          <Redirect to="/home" />)} />
-        <Route value={value} path="/gallery" component={Gallery} />
-        <Route value={value} path="/workshop" component={Workshop} />
-        <Route value={value} path="/about" component={About} />
-        <Route value={value} path="/product" component={Product} />
-        <Route value={value} path="/info" component={FooterInfo} />
-      </React.Fragment>
+  let location = useLocation();
+
+  useEffect(() => {
+    setValue(mapPath[location.pathname]);
+    console.log(location);
+  }, [location])
+
+  console.log(value);
+  return (
+    <React.Fragment>
+      <AppBar color="default">
+        <ThemeProvider theme={theme}>
+          <Tabs
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            centered
+            value={value}
+            aria-label="scrollable auto tabs example"
+          >
+            <img
+              src='images/logo.jpg'
+              width="60"
+              height="60"
+              alt="logo" />
+            <Tab className={classes.list}
+              label="Home"
+              component={Link} to="/"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }} />
+            <Tab className={classes.list}
+              label="Gallery"
+              component={Link} to="/gallery"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }} />
+            <Tab className={classes.list}
+              label="Workshop"
+              component={Link} to="/workshop"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }} />
+            <Tab className={classes.list}
+              label="About"
+              component={Link} to="/about"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }} />
+            <Tab className={classes.list}
+              label="Products"
+              component={Link} to="/product"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }} />
+          </Tabs>
+        </ThemeProvider>
+      </AppBar>
+
+      <Route value={1} exact path="/" component={Home} render={() => (
+        <Redirect to="/home" />)} />
+      <Route value={2} path="/gallery" component={Gallery} />
+      <Route value={3} path="/workshop" component={Workshop} />
+      <Route value={4} path="/about" component={About} />
+      <Route value={5} path="/product" component={Product} />
+      <Route value={6} path="/info" component={FooterInfo} />
       <Footer />
-    </HashRouter>
+    </React.Fragment>
+
   );
 }
 

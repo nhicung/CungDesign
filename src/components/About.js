@@ -6,6 +6,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,6 +41,13 @@ function a11yProps(index) {
     'aria-controls': `vertical-tabpanel-${index}`,
   };
 }
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#665544',
+    }
+  },
+});
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -93,21 +102,21 @@ export default function VerticalTabs() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Tabs
-        inkBarStyle={{background: 'blue'}}
-        indicatorColor="#665544"
-        orientation="vertical"
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Vertical tabs example"
-        className={classes.tabs}>
+      <ThemeProvider theme={theme}>
+        <Tabs
+          indicatorColor="primary"
+          orientation="vertical"
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          className={classes.tabs}>
 
-        <Tab className = {classes.tab} label="About Us" {...a11yProps(0)} />
-        <Tab className = {classes.tab} label="About CungDesign" {...a11yProps(1)} />
-        <Tab className = {classes.tab} label="Inspiration" {...a11yProps(2)} />
-      </Tabs>
-
+          <Tab className={classes.tab} label="About Us" {...a11yProps(0)} />
+          <Tab className={classes.tab} label="About CungDesign" {...a11yProps(1)} />
+          <Tab className={classes.tab} label="Inspiration" {...a11yProps(2)} />
+        </Tabs>
+      </ThemeProvider>
       <main className={classes.content}>
         {/* <div className={classes.toolbar} /> */}
         <TabPanel value={value} index={0}>
