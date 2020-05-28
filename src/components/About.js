@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
-    paddingTop: 50,
+    paddingTop: 100,
     width: 150,
   },
 

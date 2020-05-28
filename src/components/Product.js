@@ -8,7 +8,7 @@ const Styles = styled.div`
 	.card-deck{
 		width: 100%;
 		height: 50%;
-		padding: 20px;
+		padding: 100px;
 		color: #665544;
 		margin: auto;
 	}

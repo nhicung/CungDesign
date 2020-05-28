@@ -86,13 +86,13 @@ export default function Footer(props) {
               height='60'
               alt='logo'/>
             <List component='nav' className={classes.list} >
-              <ListItem className={classes.item} component={Link} to={'/about'}>
+              <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/about"}>
                 <ListItemText primary="About"  onClick={() => {
                 window.scrollTo(0,0);
               }}>
               </ListItemText>
               </ListItem>
-              <ListItem className={classes.item} component={Link} to={'/info'}>
+              <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/info"}>
                 <ListItemText primary="FAQs"  onClick={() => {
                 window.scrollTo({
                   top: 400,
@@ -103,7 +103,7 @@ export default function Footer(props) {
               </ListItem>
             </List>
             <List component='nav' className={classes.list} >
-              <ListItem className={classes.item} component={Link} to={'/info'}>
+              <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/info"}>
                 <ListItemText primary="Terms & Conditions" onClick={() => {
                   window.scrollTo(0,0);
               }}>
@@ -111,7 +111,7 @@ export default function Footer(props) {
               </ListItem>
             </List>
             <List component='nav' className={classes.list} >
-              <ListItem className={classes.item} component={Link} to={'/info'}>
+              <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/info"}>
                 <ListItemText primary="Privacy Policy"  onClick={() => {
                 window.scrollTo({
                   top: 200,

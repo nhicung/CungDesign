@@ -49,7 +49,7 @@ export default function SimpleContainer(props) {
 					className = {classes.moreButton}
 					size="small" 
 					variant="outlined" 
-					color='#665544'component={Link} to={'/about'}  
+					color='#665544'component={Link} to={process.env.PUBLIC_URL + "/about"}  
 					onClick={() => {
 						window.scrollTo(0, 0);
 					}}>
@@ -68,7 +68,7 @@ export default function SimpleContainer(props) {
 					size="small" 
 					variant="outlined" 
 					color='#665544' 
-					component={Link} to={'/gallery'} 
+					component={Link} to={process.env.PUBLIC_URL + "/gallery"}
 					onClick={() => {
 						window.scrollTo(0, 0);
 					}}>

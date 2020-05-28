@@ -80,7 +80,7 @@ export default function FormExample(props) {
 							<Form.Control
 								required
 								type="text"
-								placeholder="Name"
+								placeholder="Event"
 							/>
 							<Form.Control.Feedback type="invalid">
 								Please enter an event.
@@ -139,7 +139,7 @@ export default function FormExample(props) {
 					</Modal.Header>
 					<Modal.Body>Thank you for submitting the form!</Modal.Body>
 					<Modal.Footer>
-						<Link to='/'>
+						<Link to={process.env.PUBLIC_URL + "/"}>
 							<StyleButton variant="primary" onClick={() => {
 								window.scrollTo(0, 0);
 							}}>

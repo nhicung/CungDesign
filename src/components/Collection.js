@@ -68,7 +68,7 @@ export default function SingleLineGridList(props) {
       </GridList>
       <div className={classes.moreButton}>
         <Button
-          component={Link} to={'/gallery'} 
+          component={Link} to={process.env.PUBLIC_URL + "/gallery"} 
           size="small"
           variant="outlined"
           color='#665544'
