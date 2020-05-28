@@ -9,7 +9,8 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { IconButton } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
+import { Switch, Route, Link, HashRouter, Redirect } from "react-router-dom";
 // import classes from '*.module.css';
 //import Logo from './logo.jpg';
 
@@ -87,17 +88,15 @@ export default function Footer(props) {
               width='60'
               height='60'
               alt='logo'/>
-            <List component='nav' className={classes.list}>
-              <ListItem className={classes.item} >
-                <ListItemText primary="About" onClick={() => {
-                props.switchPage(4);
+            <List component='nav' className={classes.list} >
+              <ListItem className={classes.item} component={Link} to={'/about'}>
+                <ListItemText primary="About"  onClick={() => {
                 window.scrollTo(0,0);
               }}>
               </ListItemText>
               </ListItem>
-              <ListItem className={classes.item}>
-                <ListItemText primary="FAQs"onClick={() => {
-                props.switchPage(7);
+              <ListItem className={classes.item} component={Link} to={'/info'}>
+                <ListItemText primary="FAQs"  onClick={() => {
                 window.scrollTo({
                   top: 400,
                   behavior: 'smooth'
@@ -106,19 +105,17 @@ export default function Footer(props) {
                 </ListItemText>
               </ListItem>
             </List>
-            <List component='nav' className={classes.list}>
-              <ListItem className={classes.item} >
+            <List component='nav' className={classes.list} >
+              <ListItem className={classes.item} component={Link} to={'/info'}>
                 <ListItemText primary="Terms & Conditions" onClick={() => {
-                props.switchPage(7);
-                window.scrollTo(0,0);
+                  window.scrollTo(0,0);
               }}>
               </ListItemText>
               </ListItem>
             </List>
-            <List component='nav' className={classes.list}>
-              <ListItem className={classes.item} >
-                <ListItemText primary="Privacy Policy" onClick={() => {
-                props.switchPage(7);
+            <List component='nav' className={classes.list} >
+              <ListItem className={classes.item} component={Link} to={'/info'}>
+                <ListItemText primary="Privacy Policy"  onClick={() => {
                 window.scrollTo({
                   top: 200,
                   behavior: 'smooth'

@@ -4,6 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import tileData from './otherImages';
 import { makeStyles } from '@material-ui/core/styles';
+import { Switch, Route, Link, HashRouter, Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -23,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
 		// fontStyle: 'italic',
 		// fontFamily: 'courier',
 	},
+	moreButton:{
+		'&:hover': { 
+			color: '#d4d0c6',
+			cursor: 'pointer',
+			textDecoration: 'none',
+		  }
+	}
 	// @media (min-width: 900px) {
 	// 	width: 800px;
 	// },
@@ -44,12 +52,16 @@ export default function SimpleContainer(props) {
 					<h3>Who are we?</h3>
 					<hr color='#665544'></hr>
 					<p>CungDesign captures the beautiful moment of nature, human and life. We bring creativity to inspire the art in each person.</p>
-					<Button size="small" variant="outlined" color='#665544' onClick={() => {
-						props.switchPage(4);
+					<Button 
+					className = {classes.moreButton}
+					size="small" 
+					variant="outlined" 
+					color='#665544'component={Link} to={'/about'}  
+					onClick={() => {
 						window.scrollTo(0, 0);
 					}}>
 						Learn More
-          </Button>
+         			 </Button>
 				</div>
 			</Container>
 
@@ -58,12 +70,17 @@ export default function SimpleContainer(props) {
 					<h3>Painting of the Week</h3>
 					<hr color='#665544'></hr>
 					<p>"Fall in Love" is the theme painting of this week. Painted with Acrylic paints and captured while wandring around to see these beautiful pair of swans  </p>
-					<Button size="small" variant="outlined" color='#665544' onClick={() => {
-						props.switchPage(2);
+					<Button 
+					className = {classes.moreButton}
+					size="small" 
+					variant="outlined" 
+					color='#665544' 
+					component={Link} to={'/gallery'} 
+					onClick={() => {
 						window.scrollTo(0, 0);
 					}}>
-						See Other Paintings
-          </Button>
+					See Other Paintings
+          			</Button>
 				</div>
 				<img
 					src={tileData[14].img}
