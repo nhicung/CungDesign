@@ -6,7 +6,7 @@ import SubmitForm from './SubmitForm';
 
 const Style = styled.div`
 .title{
-	padding-top: 5%;
+	padding-top: 6%;
 	color: #665544;
 	text-align: center;
 }

@@ -6,7 +6,7 @@ import GridTile from './GridTile.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: 20,
+    padding: 80,
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
