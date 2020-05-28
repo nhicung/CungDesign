@@ -149,6 +149,9 @@ export default function GridTile(props) {
         <Fade in={open}>
           <div className={classes.paper}>
             <div className={classes.frame}>
+              <IconButton aria-label="close" className={classes.closeButton} onClick={handleClose}>
+                <CloseIcon />
+              </IconButton>
               < img src={props.tile.img}
                 className={classes.img}
                 alt={props.tile.title}
@@ -157,9 +160,6 @@ export default function GridTile(props) {
                 id="transition-modal-title" />
             </div>
             <div className={classes.description}>
-              <IconButton aria-label="close" className={classes.closeButton} >
-                <CloseIcon />
-              </IconButton>
               <h5>Name:</h5>
               <p>Type of Paint: </p>
               <p>Type of Paper: </p>

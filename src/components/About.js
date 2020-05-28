@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   img: {
-    maxWidth: '30%',
+    maxWidth: '50%',
     height: 'auto',
     padding: '8%',
   },
