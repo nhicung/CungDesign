@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ebc6d67609dbe0f2659c6d054bffc85",
+    "revision": "63375be7199514318b64e478e9b38fbf",
     "url": "/CungDesign/index.html"
   },
   {
-    "revision": "a281ce4dffb4cf5c7f67",
+    "revision": "569ab164407593e30448",
     "url": "/CungDesign/static/css/2.09d1976d.chunk.css"
   },
   {
-    "revision": "3f666c1bc2394eb9c2ba",
+    "revision": "4682e46052f2acdaa7cd",
     "url": "/CungDesign/static/css/main.2f0b291b.chunk.css"
   },
   {
-    "revision": "a281ce4dffb4cf5c7f67",
-    "url": "/CungDesign/static/js/2.e7aab14d.chunk.js"
+    "revision": "569ab164407593e30448",
+    "url": "/CungDesign/static/js/2.12106c55.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/CungDesign/static/js/2.e7aab14d.chunk.js.LICENSE.txt"
+    "url": "/CungDesign/static/js/2.12106c55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3f666c1bc2394eb9c2ba",
-    "url": "/CungDesign/static/js/main.d355aa29.chunk.js"
+    "revision": "4682e46052f2acdaa7cd",
+    "url": "/CungDesign/static/js/main.74ca5835.chunk.js"
   },
   {
     "revision": "270ded6fe2c9b2f6eff0",
