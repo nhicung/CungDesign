@@ -121,7 +121,7 @@ export default function NavBar() {
         </ThemeProvider>
       </AppBar>
 
-      <Route value={1} exact path="/" component={Home} render={() => (
+      <Route value={1} exact path="" component={Home} render={() => (
         <Redirect to="/home" />)} />
       <Route value={2} path="/gallery" component={Gallery} />
       <Route value={3} path="/workshop" component={Workshop} />
