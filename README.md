@@ -1,5 +1,6 @@
 # CungDesign
 A website showcases art collection, using react libraries.
+https://nhicung.github.io/CungDesign/
 
 ## Table of contents
 * [Getting Started](#getting-started)
@@ -43,10 +44,12 @@ This website is for:
 * Organize Painting workshop
 * Use art as a psychological therapy
 
-## View
-![](screenshot/GalleryGif.gif)
-![](screenshot/HomePage.gif)
-
+## Page View
+![](screenshot/home.gif)
+![](screenshot/gallery.gif)
+![](screenshot/workshop.gif)
+![](screenshot/about.gif)
+![](screenshot/product.gif)
 ## Technology
 
 * Built with [React](https://reactjs.org)
