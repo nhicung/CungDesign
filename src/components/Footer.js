@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: 225,
     flexShrink: 0,
+    // position: 'fixed',
+    left:0,
+    bottom:0
   },
 
   demo: {

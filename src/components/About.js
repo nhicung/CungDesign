@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     color: '#665544',
     display: 'flex',
-    height: 800,
+    // height:'400px',
   },
 
   tabs: {
@@ -88,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
 
   text: {
     paddingBottom: 80,
+    minHeight:'300px',
   },
   emphasize: {
     fontWeight: 'bold',
