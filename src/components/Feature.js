@@ -44,7 +44,7 @@ export default function SimpleContainer(props) {
 				<div className={classes.description}>
 					<h3>Who are we?</h3>
 					<hr color='#665544'></hr>
-					<p>CungDesign captures the beautiful moment of nature, human and life. We bring creativity to inspire the art in each person.</p>
+					<p>CungDesign captures the beautiful moment of nature, humans, and life. We bring creativity to inspire art in each person.</p>
 					<Button 
 					className = {classes.moreButton}
 					size="small" 
@@ -62,7 +62,7 @@ export default function SimpleContainer(props) {
 				<div className={classes.description}>
 					<h3>Painting of the Week</h3>
 					<hr color='#665544'></hr>
-					<p>"Fall in Love" is the theme painting of this week. Painted with Acrylic paints and captured while wandring around to see these beautiful pair of swans  </p>
+					<p>"Fall in Love" is the theme painting of this week. Painted with Acrylic paints, "Fall in love" captures a beautiful pair of swans at a lake on a quiet afternoon in the fall  </p>
 					<Button 
 					className = {classes.moreButton}
 					size="small" 

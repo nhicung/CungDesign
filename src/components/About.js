@@ -136,10 +136,10 @@ export default function VerticalTabs() {
               />
             </div>
             <div className={classes.text}>
-              <p className={classes.emphasize}>CungDesign is the stories told by brushes and paints, capture the places where each of us live and been to.</p>
+              <p className={classes.emphasize}>CungDesign is the stories told by brushes and paints, capture the places where each of us lives and has been to.</p>
               <p> Sometimes it is an old and narrow street corner of Hanoi. </p>
               <p> Sometimes, it is a sunny yellow rice field in a rural countryside area. </p>
-              <p>  Eveything is so connected, so related that anyone can find themselves somewhere in our collection.</p>
+              <p>  Everything is so connected, so related that anyone can find themselves somewhere in our collection.</p>
               <p> That is the message we want to send to each person joining CungDesign: <i><b>Art is as simple
             as a part of your life and anyone can make it.</b></i> </p>
             </div>
@@ -160,11 +160,11 @@ export default function VerticalTabs() {
             </div>
 
             <div className={classes.text}>
-              <p>We provide you every kits you need to become <b>a "pro" artist </b>. In each of our workshops, we introduce you one
+              <p>We provide you every kit you need to become <b>a "pro" artist. </b> In each of our workshops, we introduce you to one
             painting in our collection and show you every single step to create it. </p>
-              <p>As our workshop is usually held in a coffe shop, attenders will have a totally relaxing time for themselves, chill with music and playing with paints. You will have a chance to
-             <b> create your own art, wash away all the tiresness and become stress-free after a long week of work </b>.
-            A perfect place to be creative, enjoy art activities, and have your own unforgetable
+              <p>As our workshop is usually held in a coffee shop, attenders will have a relaxing time for themselves, chill with music, and playing with paints. You will have a chance to
+             <b> create your art, wash away all the tiredness, and become stress-free after a long week of work. </b>
+            A perfect place to be creative, enjoy art activities, and have your unforgettable
             memory with your friends and family. </p>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function VerticalTabs() {
               />
             </div>
             <div className={classes.text}>
-              <p>We are inspired by everything in our life - nature, people and our lifestyle. </p>
+              <p>We are inspired by everything in our life - nature, people, and our lifestyle. </p>
               <p> From where we live, to where we travel to. </p>
               <p> Every moment in life has its own beauty. </p>
               <p> And every person is an artist who can capture and express that beauty. </p>
