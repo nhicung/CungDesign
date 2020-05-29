@@ -88,6 +88,10 @@ const useStyles = makeStyles((theme) => ({
 
   text: {
     paddingBottom: 10,
+  },
+  emphasize: {
+    fontWeight: 'bold',
+    fontStyle: 'italic'
   }
 }));
 
@@ -113,7 +117,7 @@ export default function VerticalTabs() {
           className={classes.tabs}>
 
           <Tab className={classes.tab} label="About Us" {...a11yProps(0)} />
-          <Tab className={classes.tab} label="About CungDesign" {...a11yProps(1)} />
+          <Tab className={classes.tab} label="About Workshop" {...a11yProps(1)} />
           <Tab className={classes.tab} label="Inspiration" {...a11yProps(2)} />
         </Tabs>
       </ThemeProvider>
@@ -131,10 +135,14 @@ export default function VerticalTabs() {
                 src="images/AboutUs3.jpg"
               />
             </div>
-            <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-            facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-              gravida rutrum quisque non tellus. </p>
+            <div className={classes.text}>
+              <p className={classes.emphasize}>CungDesign is the stories told by brushes and paints, capture the places where each of us live and been to.</p>
+              <p> Sometimes it is an old and narrow street corner of Hanoi. </p>
+              <p> Sometimes, it is a sunny yellow rice field in a rural countryside area. </p>
+              <p>  Eveything is so connected, so related that anyone can find themselves somewhere in our collection.</p>
+              <p> That is the message we want to send to each person joining CungDesign: <i><b>Art is as simple
+            as a part of your life and anyone can make it.</b></i> </p>
+            </div>
           </div>
         </TabPanel>
 
@@ -151,10 +159,14 @@ export default function VerticalTabs() {
               />
             </div>
 
-            <p className={classes.text} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-            facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-              gravida rutrum quisque non tellus. </p>
+            <div className={classes.text}>
+              <p>We provide you every kits you need to become <b>a "pro" artist </b>. In each of our workshops, we introduce you one
+            painting in our collection and show you every single step to create it. </p>
+              <p>As our workshop is usually held in a coffe shop, attenders will have a totally relaxing time for themselves, chill with music and playing with paints. You will have a chance to
+             <b> create your own art, wash away all the tiresness and become stress-free after a long week of work </b>.
+            A perfect place to be creative, enjoy art activities, and have your own unforgetable
+            memory with your friends and family. </p>
+            </div>
           </div>
         </TabPanel>
 
@@ -170,10 +182,13 @@ export default function VerticalTabs() {
                 src="images/PlayingwPaint.jpg"
               />
             </div>
-            <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-            facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-              gravida rutrum quisque non tellus. </p>
+            <div className={classes.text}>
+              <p>We are inspired by everything in our life - nature, people and our lifestyle. </p>
+              <p> From where we live, to where we travel to. </p>
+              <p> Every moment in life has its own beauty. </p>
+              <p> And every person is an artist who can capture and express that beauty. </p>
+              <p> <b><i>With CungDesign, we want you to learn about art, and also, learn about the beauty of your life.  </i></b></p>
+            </div>
           </div>
         </TabPanel>
       </main>
