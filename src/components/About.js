@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   text: {
-    paddingBottom: 10,
+    paddingBottom: 80,
   },
   emphasize: {
     fontWeight: 'bold',
