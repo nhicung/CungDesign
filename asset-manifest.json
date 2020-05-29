@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CungDesign/static/css/main.2f0b291b.chunk.css",
-    "main.js": "/CungDesign/static/js/main.c6e50cbd.chunk.js",
-    "main.js.map": "/CungDesign/static/js/main.c6e50cbd.chunk.js.map",
+    "main.js": "/CungDesign/static/js/main.b96684fc.chunk.js",
+    "main.js.map": "/CungDesign/static/js/main.b96684fc.chunk.js.map",
     "runtime-main.js": "/CungDesign/static/js/runtime-main.8948abac.js",
     "runtime-main.js.map": "/CungDesign/static/js/runtime-main.8948abac.js.map",
     "static/css/2.09d1976d.chunk.css": "/CungDesign/static/css/2.09d1976d.chunk.css",
     "static/js/2.97479316.chunk.js": "/CungDesign/static/js/2.97479316.chunk.js",
     "static/js/2.97479316.chunk.js.map": "/CungDesign/static/js/2.97479316.chunk.js.map",
     "index.html": "/CungDesign/index.html",
-    "precache-manifest.8d55c632c2f616ffad4c6597da7da4d0.js": "/CungDesign/precache-manifest.8d55c632c2f616ffad4c6597da7da4d0.js",
+    "precache-manifest.2eefc294283367b41fe03d66671abe66.js": "/CungDesign/precache-manifest.2eefc294283367b41fe03d66671abe66.js",
     "service-worker.js": "/CungDesign/service-worker.js",
     "static/css/2.09d1976d.chunk.css.map": "/CungDesign/static/css/2.09d1976d.chunk.css.map",
     "static/css/main.2f0b291b.chunk.css.map": "/CungDesign/static/css/main.2f0b291b.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.09d1976d.chunk.css",
     "static/js/2.97479316.chunk.js",
     "static/css/main.2f0b291b.chunk.css",
-    "static/js/main.c6e50cbd.chunk.js"
+    "static/js/main.b96684fc.chunk.js"
   ]
 }
