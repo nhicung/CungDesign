@@ -4,13 +4,13 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 import tileData from './otherImages';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
 		padding: 30,
 		border: '1px solid #665544',
 		height: '30%',
-		// textAlign: 'left',
 		marginTop: 50,
 		display: 'flex',
 		flexDirection: 'row',
@@ -19,13 +19,14 @@ const useStyles = makeStyles((theme) => ({
 		width: '70%',
 		color: '#665544',
 		padding: 70,
-		// alignContent: 'left',
-		// fontStyle: 'italic',
-		// fontFamily: 'courier',
 	},
-	// @media (min-width: 900px) {
-	// 	width: 800px;
-	// },
+	moreButton:{
+		'&:hover': { 
+			color: '#d4d0c6',
+			cursor: 'pointer',
+			textDecoration: 'none',
+		}
+	}
 }));
 
 export default function SimpleContainer(props) {
@@ -43,13 +44,17 @@ export default function SimpleContainer(props) {
 				<div className={classes.description}>
 					<h3>Who are we?</h3>
 					<hr color='#665544'></hr>
-					<p>CungDesign captures the beautiful moment of nature, human and life. We bring creativity to inspire the art in each person.</p>
-					<Button size="small" variant="outlined" color='#665544' onClick={() => {
-						props.switchPage(4);
+					<p>CungDesign captures the beautiful moment of nature, humans, and life. We bring creativity to inspire art in each person.</p>
+					<Button 
+					className = {classes.moreButton}
+					size="small" 
+					variant="outlined" 
+					color='#665544'component={Link} to={process.env.PUBLIC_URL + "/about"}  
+					onClick={() => {
 						window.scrollTo(0, 0);
 					}}>
 						Learn More
-          </Button>
+         			 </Button>
 				</div>
 			</Container>
 
@@ -57,13 +62,18 @@ export default function SimpleContainer(props) {
 				<div className={classes.description}>
 					<h3>Painting of the Week</h3>
 					<hr color='#665544'></hr>
-					<p>"Fall in Love" is the theme painting of this week. Painted with Acrylic paints and captured while wandring around to see these beautiful pair of swans  </p>
-					<Button size="small" variant="outlined" color='#665544' onClick={() => {
-						props.switchPage(2);
+					<p>"Fall in Love" is the theme painting of this week. Painted with Acrylic paints, "Fall in love" captures a beautiful pair of swans at a lake on a quiet afternoon in the fall  </p>
+					<Button 
+					className = {classes.moreButton}
+					size="small" 
+					variant="outlined" 
+					color='#665544' 
+					component={Link} to={process.env.PUBLIC_URL + "/gallery"}
+					onClick={() => {
 						window.scrollTo(0, 0);
 					}}>
-						See Other Paintings
-          </Button>
+					See Other Paintings
+          			</Button>
 				</div>
 				<img
 					src={tileData[14].img}

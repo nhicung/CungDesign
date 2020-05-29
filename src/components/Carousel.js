@@ -35,7 +35,7 @@ export const CarouselHandler = () => (
 				<Carousel.Caption>
 					<div className='caption'>
 						<h3>Woodland Scent</h3>
-						<p font-style='italic'>"Into the Woods"</p>
+						<h5 font-style='italic'>"Into the Woods"</h5>
 					</div>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -48,7 +48,7 @@ export const CarouselHandler = () => (
 				<Carousel.Caption>
 					<div className='caption'>
 						<h3>Golden Autumn</h3>
-						<p font-style='italic'>"The sky, the river and the leaves"</p>
+						<h5 font-style='italic'>"The sky, the river and the leaves"</h5>
 					</div>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -61,7 +61,7 @@ export const CarouselHandler = () => (
 				<Carousel.Caption>
 					<div className='caption'>
 						<h3>The Red Silk Cotton Tree</h3>
-						<p font-style='italic'>"Memory of the old backyard"</p>
+						<h5 font-style='italic'>"Memory of the old backyard"</h5>
 					</div>
 				</Carousel.Caption>
 			</Carousel.Item>

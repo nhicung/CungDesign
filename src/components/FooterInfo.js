@@ -6,6 +6,7 @@ import {BreakLine}  from './LineBreak'
 const useStyles = makeStyles((theme) => ({
 	container:{
 		textAlign:'center',
+		color:'#665544',
 	},
 	section: {
 		paddingBottom: 100,

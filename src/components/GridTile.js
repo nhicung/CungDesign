@@ -7,6 +7,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import CloseIcon from '@material-ui/icons/Close';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,12 +19,8 @@ const useStyles = makeStyles((theme) => ({
     // }
   },
 
-  title: {
-    color: 'white',
-  },
-
   titleBar: {
-    width:'90%',
+    width: '90%',
     margin: 'auto',
     background:
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
@@ -43,10 +40,10 @@ const useStyles = makeStyles((theme) => ({
   imgIdle: {
     // maxHeight: '80%',
     maxWidth: '90%',
-    
+
   },
 
-  imgHover:{
+  imgHover: {
     backgroundColor: '#ffffff',
     maxWidth: '90%',
     '&:hover': {
@@ -72,8 +69,6 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: 'middle',
     display: 'flex',
     flexDirection: 'row',
-    // border: '2px solid #000',
-    // boxShadow: theme.shadows[5],
     padding: theme.spacing(4, 4, 4),
   },
 
@@ -88,6 +83,13 @@ const useStyles = makeStyles((theme) => ({
   img: {
     maxHeight: '100%',
     maxWidth: '100%',
+  },
+
+  closeButton: {
+    position: 'absolute',
+    right: '15%',
+    top:  '20%',
+    color: theme.palette.grey[500],
   },
 
   description: {
@@ -115,17 +117,16 @@ export default function GridTile(props) {
       classes={{
         root: classes.root,
       }}>
-      <div className = {classes.space} > 
-        <img className ={classes.imgIdle} 
-        src={props.tile.img} 
-        alt={props.tile.title} 
-        onClick={handleOpen} />
-        <div className = {classes.imgHover}></div>
-      
+      <div className={classes.space} >
+        <img className={classes.imgIdle}
+          src={props.tile.img}
+          alt={props.tile.title}
+          onClick={handleOpen} />
+        <div className={classes.imgHover}></div>
+
         <GridListTileBar
           className={classes.titleBar}
           title={props.tile.title}
-          subtitle={<span>by: {props.tile.author}</span>}
           actionIcon={
             <IconButton aria-label={`info about ${props.tile.title}`} className={classes.icon} onClick={handleOpen}>
               <InfoIcon />
@@ -148,6 +149,9 @@ export default function GridTile(props) {
         <Fade in={open}>
           <div className={classes.paper}>
             <div className={classes.frame}>
+              <IconButton aria-label="close" className={classes.closeButton} onClick={handleClose}>
+                <CloseIcon />
+              </IconButton>
               < img src={props.tile.img}
                 className={classes.img}
                 alt={props.tile.title}
