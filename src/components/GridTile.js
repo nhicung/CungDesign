@@ -160,10 +160,10 @@ export default function GridTile(props) {
                 id="transition-modal-title" />
             </div>
             <div className={classes.description}>
-              <h5>Name:</h5>
-              <p>Type of Paint: </p>
+              <h5>Name: {props.tile.title}</h5>
+              <p>Type of Paint: {props.tile.paint}</p>
               <p>Type of Paper: </p>
-              <p>Inspired by: </p>
+              <p>Inspired by: {props.tile.inspire}</p>
             </div>
           </div>
         </Fade>

@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(4),
       fontSize: '16px',
       color: '#665544',
-      textDecoration: 'underline',
+      textDecoration: 'none',
       '&:hover': {
         color: '#d4d0c6',
       }
@@ -75,7 +75,7 @@ export default function SingleLineGridList(props) {
           onClick={() => {
             window.scrollTo(0, 0);
           }}>
-          More Painting
+          Show Gallery
           </Button>
       </div>
     </div>

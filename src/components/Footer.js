@@ -98,7 +98,7 @@ export default function Footer(props) {
               <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/info"}>
                 <ListItemText primary="FAQs"  onClick={() => {
                 window.scrollTo({
-                  top: 400,
+                  top: 0,
                   behavior: 'smooth'
                   });
               }}>
@@ -108,7 +108,10 @@ export default function Footer(props) {
             <List component='nav' className={classes.list} >
               <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/info"}>
                 <ListItemText primary="Terms & Conditions" onClick={() => {
-                  window.scrollTo(0,0);
+                  window.scrollTo({
+                    top: 200,
+                    behavior: 'smooth'
+                    });
               }}>
               </ListItemText>
               </ListItem>
@@ -117,7 +120,7 @@ export default function Footer(props) {
               <ListItem className={classes.item} component={Link} to={process.env.PUBLIC_URL + "/info"}>
                 <ListItemText primary="Privacy Policy"  onClick={() => {
                 window.scrollTo({
-                  top: 200,
+                  top: 500,
                   behavior: 'smooth'
                   });
               }}>
