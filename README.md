@@ -45,11 +45,17 @@ This website is for:
 * Use art as a psychological therapy
 
 ## Page View
+### Home Page
 ![](screenshot/home.gif)
+### Gallery Page
 ![](screenshot/gallery.gif)
+### Workshop Page
 ![](screenshot/workshop.gif)
+### About Page
 ![](screenshot/about.gif)
+### Product Page
 ![](screenshot/product.gif)
+
 ## Technology
 
 * Built with [React](https://reactjs.org)
