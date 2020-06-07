@@ -20,22 +20,21 @@ After having cloned or downloaded the project, open it in suitable platform (sug
 
 ### Installing
 
-* Install [Nodejs](https://nodejs.org/en/)
+#### For Mac
+* Install [Node.js](https://nodejs.org/en/): 
+Open the Terminal and type 
+```
+brew install node
+```
+Clone or download the project, open it on a suitable platform (suggested: [Visual Studio Code](https://code.visualstudio.com))
 
-* Install npm 
-```
-sudo npm install npm -g
-```
 * Enter these command lines:
 ```
 npm install
 npm start
 ```
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 The page will reload if you make edits.<br />
-Website will be shown on your local host.
+Website will be shown on your browser, running on your local host.
 
 ## Feature
 
@@ -58,7 +57,7 @@ This website is for:
 
 ## Technology
 
-* Built with [React](https://reactjs.org)
+* Built with [React](https://reactjs.org), [Material-UI](https://material-ui.com), [React Bootstrap](https://react-bootstrap.github.io), [Create React App](https://github.com/facebook/create-react-app).
 
 ## License
 
