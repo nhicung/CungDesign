@@ -26,9 +26,11 @@ const Style = styled.div`
 	flex-direction: row;
 	padding: 2%;
 }
+
 .figure {
 	padding: 5%;
 }
+
 .description {
 	width: 50%;
 	color: #665544;
@@ -51,7 +53,6 @@ const Style = styled.div`
 	bacground-color: #665544;
 }
 `
-
 export const Workshop = (props) => (
 	<Style>
 		<div className='title'>
@@ -89,5 +90,6 @@ export const Workshop = (props) => (
 		</Container>
 
 		<SubmitForm></SubmitForm>
+		
 	</Style>
 )

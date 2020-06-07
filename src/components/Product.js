@@ -23,10 +23,10 @@ const Styles = styled.div`
 		}
 	}
 	.card-deck{
-	width: 100%;
-	height: 50%;
-	margin: auto;
-	padding-top: 40px;
+		width: 100%;
+		height: 50%;
+		margin: auto;
+		padding-top: 40px;
 	}
 	.frame {
     height: 100%,
@@ -46,7 +46,7 @@ export const Product = (props) => (
 	<Styles>
 		<div className='root'>
 			<div className='intro'>
-				<p> Handmade products by CungDesign. Message on Facebook <a className='email' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Fcungarttherapy%3Ffbclid%3DIwAR0Mt5w8mDb4qYW-xQ4W2_t-JFAi7E8mrAMsn4uERiT2X5F3UcVjG01V53I&h=AT0rWirmQWBBlpR572S5UVPx3MPaX8ZbZfRBoPzcC2uGRua3rjIRvXTNPURF7DC8ROStgIgUkyR0PzUsgK0DF_6XkNCBnym0-Pa9Ednmy9juEUOnvDspacC9A6AZvjJw959UANqDdI3mwXkAEL_Jpwi7qxI" target="_blank" > CungDesign </a> or email <a className='email' href={"mailto:" + props.email}>cungdesign@gmail.com </a> if interested.</p>
+				<p> Handmade products by CungDesign. Message on Facebook <a className='email' href='https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Fcungarttherapy%3Ffbclid%3DIwAR0Mt5w8mDb4qYW-xQ4W2_t-JFAi7E8mrAMsn4uERiT2X5F3UcVjG01V53I&h=AT0rWirmQWBBlpR572S5UVPx3MPaX8ZbZfRBoPzcC2uGRua3rjIRvXTNPURF7DC8ROStgIgUkyR0PzUsgK0DF_6XkNCBnym0-Pa9Ednmy9juEUOnvDspacC9A6AZvjJw959UANqDdI3mwXkAEL_Jpwi7qxI' target='_blank' rel='noopener noreferrer' > CungDesign </a> or email <a className='email' href={'mailto:' + props.email}>cungdesign@gmail.com </a> if interested.</p>
 				<p> Products are also provided at workshops. </p>
 			</div>
 			<CardDeck>

@@ -1,4 +1,3 @@
-
 const tileData = [
   {
     img: 'images/bangtan.jpg',
