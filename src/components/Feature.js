@@ -6,6 +6,7 @@ import tileData from './otherImages';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
+
 const useStyles = makeStyles((theme) => ({
 	container: {
 		padding: 30,
